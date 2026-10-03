@@ -1,0 +1,996 @@
+[
+  {
+    "id": "K-1",
+    "question": "Spieluhr und Wurfuhr sind immer gleichzeitig zu starten. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Beim legalen Tipp des Eröffnungssprungballs startet nur die Spieluhr. Nach dem letzten Freiwurf startet nur die Spieluhr bei der ersten Ballberührung auf dem Spielfeld. Die Wurfuhr wird jeweils erst bei der ersten Mannschaftsballkontrolle auf dem Spielfeld gestartet. 3"
+  },
+  {
+    "id": "K-2",
+    "question": "Während einer Auszeit meldet sich A6 bei der Zeitnehmerin zum Spielerwechsel. A6 wird nach Beendigung der Auszeit zum Spieler. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "A6 wird während einer Auszeit bereits zum Zeitpunkt der Anmeldung bei der Zeitnehmerin zum Spieler. 4"
+  },
+  {
+    "id": "K-3",
+    "question": "Wird für den 1. Trainer-Assistenten eine Trainer-Lizenz vorgelegt, ist diese auf dem Anschreibebogen einzutragen. Richtig?",
+    "answer": "Ja",
+    "article": "7",
+    "explanation": ""
+  },
+  {
+    "id": "K-4",
+    "question": "Beim Spielerwechsel wird entdeckt, dass ein Einwechselspieler die Nummer 12 trägt, die auf dem Anschreibebogen nicht vorkommt. Dort ist er in Übereinstimmung mit der vor Spielbeginn vorgelegten Mannschaftsliste A mit Nummer 22 eingetragen. Der Anschreibebogen wird korrigiert und eine Strafe wird nicht ausgesprochen. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Anschreibebogen wird korrigiert und es wird keine Strafe ausgesprochen. 7"
+  },
+  {
+    "id": "K-5",
+    "question": "Vor der Wiederholung des Eröffnungssprungballs entdeckt der Anschreiber, dass Spieler A6 nicht zur Ersten Fünf gehört. Er lässt sein Signal ertönen, damit A6 gegen A5 ausgetauscht werden kann. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Das Spiel hat bereits begonnen. Der Fehler wird nicht beachtet. 7"
+  },
+  {
+    "id": "K-6",
+    "question": "Mindestens 10 Minuten vor Spielbeginn müssen beide Trainer die Erste Fünf bekannt geben. Der Trainer der Gastmannschaft hat diese Information als Erster zu geben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Trainer der Heimmannschaft gibt zuerst die Ersten Fünf bekannt. 7 Kampfrichterfragen 2026 Jeder Kampfrichterin, jedem Kampfrichter und jeder Kommissarin, jedem Kommissar wird empfohlen, sich mit den \"Regelfragen 2026\" zu beschäftigen Neben den \"Regelfragen 2026\" muss jede Schiedsrichterin, jeder Schiedsrichter auch die \"Kampfrichterfragen 2026\" kennen, um ihre / seine Aufgaben gut wahrnehmen zu können. 1.8.2026 1 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-7",
+    "question": "In der Mannschaftsliste der Mannschaft A sind neben dem Trainer zwei Trainer-Assistenten aufgeführt, die auch vom Anschreiber in den Anschreibebogen übernommen werden. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Es kann nur ein 1. Trainer-Assistent eingetragen werden. 7"
+  },
+  {
+    "id": "K-8",
+    "question": "Wird ein Foul mit Ablauf der Spielzeit gepfiffen und die Schiedsrichter entscheiden, dass das Foul noch in der Spielzeit geschah, muss die Spieluhr auf mindestens 0,1 Sekunden gesetzt werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Schiedsrichter legen die Restspielzeit fest. 8"
+  },
+  {
+    "id": "K-9",
+    "question": "A1 wird während ihrer Korbwurfaktion, aber kurz nach Ablauf der Spielzeit des 1. Viertels von B1 gefoult (Persönliches Foul). Da das Foul in der Spielpause geschah, zählt es zu den Mannschaftsfouls des 2. Viertels. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Persönliche Fouls in Spielpausen werden nicht beachtet. 8"
+  },
+  {
+    "id": "K-10",
+    "question": "Während des Sprungballs zu Spielbeginn berührt Springerin A1 den Ball, bevor dieser den höchsten Punkt erreicht hat. Das Spiel wird mit Einwurf B in deren Vorfeld und mit 10:00 auf der Spieluhr und 14 Sekunden auf der Wurfuhr fortgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Spieluhr wird, falls gestartet, auf 10:00 zurückgesetzt und die Wurfuhr auf 14 Sekunden gesetzt. 9"
+  },
+  {
+    "id": "K-11",
+    "question": "Sieben Minuten vor Spielbeginn verletzt sich Spielerin A1. A1 gehört zur Ersten Fünf und wird durch A6 ersetzt. Nun darf auch Mannschaft B eine Spielerin der Ersten Fünf austauschen. Richtig?",
+    "answer": "Ja",
+    "article": "9",
+    "explanation": ""
+  },
+  {
+    "id": "K-12",
+    "question": "Beim Eröffnungssprungball tippt Springer A1 den Ball ins Aus. B1 wirft ein und sobald der Ball nach dem Einwurf von B2 auf dem Spielfeld gefangen wurde, wird der Einwurfpfeil für Mannschaft A gesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurfpfeil wird gesetzt, sobald der Ball dem Einwerfer B1 zur Verfügung steht. 12"
+  },
+  {
+    "id": "K-13",
+    "question": "Die 1. Schiedsrichterin wirft den Ball zum Eröffnungssprungball zwischen A1 und B1 hoch. A1 tippt den Ball legal und wird dabei von B1 gefoult. Einwurf im Rückfeld von Mannschaft A. Der Einwurfpfeil wird für B gesetzt, sobald der Ball der Einwerferin zur Verfügung steht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Das Spiel hat begonnen. Das Foul von B1 wird mit Einwurf im Rückfeld von Mannschaft A geahndet und mit 24 Sekunden auf der Wurfuhr. 12"
+  },
+  {
+    "id": "K-14",
+    "question": "A1 wirft gemäß Wechselndem Ballbesitz ein. Bevor ein Spieler den Ball auf dem Spielfeld berührt, wird ein Persönliches Foul gegen Mannschaft B (3. Mannschaftsfoul) gepfiffen. Mannschaft A erhält einen Einwurf und der Einwurfpfeil wird nicht gedreht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Einwurfpfeil wird bei einem Foul während des Einwurfs gemäß Wechselndem Ballbesitz nicht gedreht. 12 1.8.2026 2 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-15",
+    "question": "Nach dem Einwurf von A1 gemäß Wechselndem Ballbesitz zu Beginn des 2. Viertels wird der Ball von A2 berührt, aber nicht kontrolliert. Bevor eine Mannschaft die Ballkontrolle auf dem Spielfeld erlangt, wird ein Foul gepfiffen. Der Einwurfpfeil wird gedreht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Einwurf ist mit der Ballberührung durch A2 beendet. Der Einwurfpfeil wird gedreht. 12"
+  },
+  {
+    "id": "K-16",
+    "question": "Der 1. Schiedsrichter wirft den Ball zum Eröffnungssprungball hoch. A1 tippt den Ball und wird dabei von Mitspringer B1 gefoult. Der folgende Einwurf von A2 wird von B2 abgefangen. Der Einwurfpfeil wird für Mannschaft A gesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurfpfeil wird für Mannschaft B gesetzt, da bereits Einwerfer A2 die erste Ballkontrolle hatte. 12"
+  },
+  {
+    "id": "K-17",
+    "question": "Vor dem Eröffnungssprungball gibt es einen Freiwurf für A1 für ein Technisches Foul von B2. Damit hat A1 die erste Ballkontrolle und der Einwurfpfeil wird für Mannschaft B gesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurfpfeil kann erst nach dem Eröffnungssprungball gesetzt werden. 12"
+  },
+  {
+    "id": "K-18",
+    "question": "A1 begeht bei einem Einwurf gemäß Wechselndem Ballbesitz eine Regelübertretung. Mannschaft B wirft ein. Danach wird der Einwurfpfeil wieder für Mannschaft A gedreht. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurf für Mannschaft B erfolgt aufgrund der Regelübertretung von A1. Der Einwurfpfeil wird für Mannschaft B gedreht. 12"
+  },
+  {
+    "id": "K-19",
+    "question": "Beim Eröffnungssprungball tippt Springer A1 den Ball direkt ins Aus. Sobald dem Einwerfer B1 der Ball zur Verfügung steht, wird der Einwurfpfeil für Mannschaft A gesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "B1 hat 1. Ballkontrolle nach Spielbeginn. 12"
+  },
+  {
+    "id": "K-20",
+    "question": "Bevor der Ball beim Eröffnungssprungball seinen höchsten Punkt erreicht hat, betritt Nichtspringer A2 aus seinem Vorfeld kommend den Mittelkreis. Mannschaft B erhält Einwurf in ihrem Rückfeld mit 24 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": "12",
+    "explanation": ""
+  },
+  {
+    "id": "K-21",
+    "question": "Beim Einwurf von A1 gemäß Wechselndem Ballbesitz begeht A2 ein Disqualifizierendes Foul, bevor der Ball von einem Spieler auf dem Spielfeld berührt wird. Der Einwurfpfeil wird gedreht. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurfpfeil wird bei einem Foul während des Einwurfs gemäß Wechselndem Ballbesitz nicht gedreht. 12"
+  },
+  {
+    "id": "K-22",
+    "question": "Beim Einwurf von A1 im 3. Viertel gemäß Wechselndem Ballbesitz begeht B2 ein Foul (3. Mannschaftsfoul B), als A1 den Ball noch in seinen Händen hält. Mannschaft A erhält Einwurf und der Einwurfpfeil wird nicht gedreht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "In den letzten zwei Minuten des 4. Viertels und der Verlängerung wäre dies ein Einwurffoul. 12"
+  },
+  {
+    "id": "K-23",
+    "question": "Beim Eröffnungssprungball tippt Springerin A1 den noch steigenden Ball. Mannschaft B erhält Einwurf in ihrem Vorfeld in der Nähe der Mittellinie mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Mannschaft B erhält Einwurf in ihrem Vorfeld mit 14 Sekunden auf der Wurfuhr. Die Spieluhr bleibt bei 10:00. 12"
+  },
+  {
+    "id": "K-24",
+    "question": "Bei einem zufälligen Eigenkorb von A1 werden die Punkte dem „Kapitän auf dem Spielfeld“ der gegnerischen Mannschaft angeschrieben. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Aber ein absichtlicher Eigenkorb wäre eine Regelübertretung (keine Punkte, Einwurf Mannschaft B in Höhe der Freiwurflinie mit 14 Sekunden auf der Wurfuhr). 16 1.8.2026 3 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-25",
+    "question": "Ein Eigenkorb kann einen, zwei oder drei Punkte zählen. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Ein zufälliger Eigenkorb zählt 2 Punkte. Drei Punkte können nur auf den gegnerischen Korb erzielt werden. Geht der Ball trotz Regelübertretung eines Verteidigers in den Korb, gilt die Korbwertung für den Werfer gemäß Regelübertretung (kein Eigenkorb). 16"
+  },
+  {
+    "id": "K-26",
+    "question": "Beginnt das 2. Viertel mit Freiwürfen und nachfolgendem Einwurf an der Einwurfmarkierung im Vorfeld, wird die Wurfuhr auf 14 Sekunden gesetzt und der Einwurfpfeil wird nicht gedreht. Richtig?",
+    "answer": "Ja",
+    "article": "17",
+    "explanation": ""
+  },
+  {
+    "id": "K-27",
+    "question": "Im 3. Viertel hält Einwerferin A1 in ihrem Vorfeld bei 7 Sekunden auf der Wurfuhr den Ball in ihren Händen, als B1 ihre Arme über die Auslinie hält. Mannschaft A erhält Einwurf mit jetzt 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "B1 wird wegen Spielverzögerung verwarnt. 17"
+  },
+  {
+    "id": "K-28",
+    "question": "Bei noch 21 Sekunden auf der Wurfuhr im 3. Viertel erhält Mannschaft A Einwurf in ihrem Rückfeld, wobei B1 seine Arme über die Auslinie hält. Der Einwurf wird wiederholt und die Wurfuhr wird nicht zurückgesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Wurfuhr wird wegen der Regelübertretung der verteidigenden Mannschaft auf 24 Sekunden zurückgesetzt. 17"
+  },
+  {
+    "id": "K-29",
+    "question": "Bei noch 17 Sekunden auf der Wurfuhr begeht die angreifende Mannschaft A im Vorfeld ein Technisches Foul. Nach dem Freiwurf für Mannschaft B gibt es Einwurf für Mannschaft A im Vorfeld und mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Einwurf mit der Restzeit von 17 Sekunden. 17"
+  },
+  {
+    "id": "K-30",
+    "question": "Bei 1:31 im 4. Viertel erzielt A1 einen Korb und Mannschaft B wechselt einen Spieler. Während des Wechsels beantragt Trainerin A eine Auszeit, die jetzt gewährt wird. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Wenn Mannschaft B einen Spielerwechsel vornimmt, kann die Mannschaft des Korbwerfers Spielerwechsel oder Auszeit durchführen. 18"
+  },
+  {
+    "id": "K-31",
+    "question": "Der 1. Trainer-Assistent darf Auszeiten beantragen. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Auch der 1. Trainer-Assistent darf Auszeiten beantragen. 18"
+  },
+  {
+    "id": "K-32",
+    "question": "Nur der Trainer darf eine Auszeit beantragen. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Auch der 1. Trainer-Assistent darf eine Auszeit beantragen. 18"
+  },
+  {
+    "id": "K-33",
+    "question": "Bei einem irrtümlich gegebenen Signal sind Auszeit und Spielerwechsel möglich. Richtig?",
+    "answer": "Nein",
+    "article": "18",
+    "explanation": ""
+  },
+  {
+    "id": "K-34",
+    "question": "Bei einem irrtümlich gegebenen Signal sind Auszeit und Spielerwechsel nicht möglich. Richtig?",
+    "answer": "Ja",
+    "article": "18",
+    "explanation": ""
+  },
+  {
+    "id": "K-35",
+    "question": "Nach dem ersten von zwei Freiwürfen für A1 wird gegen A2 ein Technisches Foul verhängt. Eine Spielerin der Mannschaft B wirft einen Freiwurf ohne Aufstellung. Vor dem 2. Freiwurf von A1 sind Auszeit oder Spielerwechsel möglich. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Weder vor noch nach diesem Freiwurf für das Technische Foul können Spielerwechsel oder Auszeit durchgeführt werden, es sei denn, es wird ein Spieler zur Ausführung des Freiwurfs für das Technische Foul eingewechselt. In diesem Fall darf auch die gegnerische Mannschaft einen Spieler wechseln, falls sie dies wünscht. 18 1.8.2026 4 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-36",
+    "question": "B1 begeht ein Flagrant Foul am erfolgreichen Korbwerfer A1. Danach wird gegen Trainer B ein Technisches Foul (\"C\") verhängt. Nach dem Freiwurf für Mannschaft A für das Technische Foul und vor dem Freiwurf von A1 beantragt Trainerin B eine Auszeit. Die Auszeit kann jetzt gewährt werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Wäre die Auszeit vor dem Freiwurf für das Technische Foul beantragt worden, hätte die Auszeit vor diesem Freiwurf gewährt werden müssen. 18"
+  },
+  {
+    "id": "K-37",
+    "question": "Gegen B1 wird ein Flagrant Foul verhängt. Nach dem zweiten erfolglosen Freiwurf von A1 und vor dem Einwurf A von der Einwurfmarkierung in ihrem Vorfeld beantragt Trainer B eine Auszeit, die jetzt gewährt wird. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Vor dem Einwurf ist eine Auszeitmöglichkeit für beide Mannschaften. 18"
+  },
+  {
+    "id": "K-38",
+    "question": "Bei 2:15 im 4. Viertel beantragt Trainer B seine erste Auszeit in der zweiten Halbzeit. Bei 1:57 erzielt A1 einen Korb und Mannschaft B erhält die Auszeit. Damit hat Mannschaft B in der 2. Halbzeit nur noch eine Auszeit zur Verfügung. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die erste Auszeit der Mannschaft B ist bei 2:00 verfallen. 18"
+  },
+  {
+    "id": "K-39",
+    "question": "In den letzten 2 Spielminuten des 4. Viertels beantragt zuerst Trainer B eine Auszeit, danach Trainer-Assistent A. Nach Ausball durch B1 kommt das Signal zur Auszeit B. Das Kampfgericht lässt Mannschaft A über die Schiedsrichter darüber informieren, dass es sich um eine Auszeit für Mannschaft B handelt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Trainer A muss darüber informiert werden, dass dies nicht seine Auszeit war und somit der Einwurf nicht ins Vorfeld verlegt werden kann, was Mannschaft A durch eine weitere, eigene Auszeit erreichen kann. 18"
+  },
+  {
+    "id": "K-40",
+    "question": "Zu Beginn einer Auszeit meldet sich Einwechselspieler A6 beim Kampfgericht an. Während der Auszeit begeht er ein Technisches Foul. Dies wird ihm als Spieler angeschrieben und zählt zu den Mannschaftsfouls. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "A6 wurde beim Anmelden zum Spieler. 18"
+  },
+  {
+    "id": "K-41",
+    "question": "Nach dem ersten von zwei Freiwürfen für A1 wird gegen A2 ein Technisches Foul verhängt. Um den Freiwurf für das Technische Foul zu werfen, kann B6 eingewechselt werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Dann darf auch Mannschaft A einen Spieler auswechseln. 19"
+  },
+  {
+    "id": "K-42",
+    "question": "Die Schiedsrichterin winkt A6 herein, der für A1 eingewechselt wird. Beim Verlassen des Spielfelds erhält A1 ein Technisches Foul. Dieses Foul zählt zu den Mannschaftsfouls der Mannschaft A in diesem Viertel. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Durch das Hereinwinken von A6 wird A1 zum Ersatzspieler. Das Technische Foul wird gegen die Trainerin A verhängt und zählt nicht zu den Mannschaftsfouls. 19"
+  },
+  {
+    "id": "K-43",
+    "question": "B1 wird gegen B6 ausgewechselt. Bevor die Spieluhr wieder gestartet wurde, begeht B6 sein 4. Persönliches Foul. Trainer B möchte nun B6 sofort wieder auswechseln. Das ist legal. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Spieluhr ist noch nicht wieder gelaufen. Nur nach dem 5. Foul von B6 müsste er sofort wieder das Spielfeld verlassen. 19 1.8.2026 5 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-44",
+    "question": "Bei 0:59 im 4. Viertel erzielt A1 einen Korb und Trainer B beantragt einen Spielerwechsel, der jetzt gewährt wird. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Nur der Ersatzspieler hat das Recht, einen Spielerwechsel zu beantragen. Er (nicht der Trainer oder 1. Trainer-Assistent) muss dazu zum Anschreibertisch gehen und den Spielerwechsel mit dem vorgeschriebenen Handzeichen beantragen oder sich auf den Wechselstuhl setzen. 19"
+  },
+  {
+    "id": "K-45",
+    "question": "Nach mehreren Technischen Fouls in einer Uhr-Stopp-Periode darf auch zwischen Freiwürfen einer Foulstrafe ein Werfer eingewechselt werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Wenn in dieser Situation die Mannschaft des Freiwerfers einen legalen Spielerwechsel vornimmt, darf auch die gegnerische Mannschaft die gleiche Anzahl von Spielern wechseln. 19"
+  },
+  {
+    "id": "K-46",
+    "question": "A6 ist auf dem Weg zum Kampfgericht, um Spielerwechsel zu beantragen. Der Schiedsrichter legt den Ball an der Einwurfstelle auf den Boden. Ein Spielerwechsel ist noch solange möglich, bis Einwerfer A1 den Ball aufgenommen hat. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Wechselmöglichkeit endet, wenn der Ball bei einem Einwurf dem Einwerfer zur Verfügung steht. Da der Schiedsrichter den Ball an der Einwurfstelle auf den Boden gelegt hat, steht der Ball dem Einwerfer zur Verfügung. 19"
+  },
+  {
+    "id": "K-47",
+    "question": "Bei noch drei Sekunden auf der Wurfuhr wird der von A1 eingeworfene Ball durch B1 abgefälscht. Mit dieser Berührung wird die Wurfuhr eingeschaltet. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Beide Uhren werden eingeschaltet, sobald ein Spieler nach einem Einwurf den Ball legal berührt. 29/51"
+  },
+  {
+    "id": "K-48",
+    "question": "Mannschaft A kontrolliert den Ball im Vorfeld, als der Schiedsrichter bei einer Restzeit von 3 Sekunden auf der Wurfuhr das Spiel unterbricht, weil das Spielfeld gewischt werden muss. Beim anschließenden Einwurf A wird die Wurfuhr nicht zurückgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Keine Mannschaft darf dadurch benachteiligt werden. 29/51"
+  },
+  {
+    "id": "K-49",
+    "question": "Mannschaft A hat Ballkontrolle, als bei 5 Sekunden auf der Wurfuhr gegen A1 und B1 jeweils ein Technisches Foul verhängt wird. Das Spiel wird mit Einwurf A fortgesetzt und die Wurfuhr wird nicht zurückgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Strafen für die Technischen Fouls von A1 und B1 heben sich auf. Die Wurfuhr wird nicht zurückgesetzt und das Spiel mit Einwurf für Mannschaft A nächst der Stelle fortgesetzt, an der der Ball zum Zeitpunkt der Spielunterbrechung war. 29/51"
+  },
+  {
+    "id": "K-50",
+    "question": "A1 will zu seinem Mitspieler A2 passen, der Ball prallt von dessen Schulter ab und berührt den Ring. A3 fängt den Ball und Mannschaft A setzt ihren Angriff fort. Die Wurfuhr wird auf 14 Sekunden gesetzt. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-51",
+    "question": "Mannschaft A ist in ihrem Rückfeld in Ballbesitz, als der Schiedsrichter das Spiel unterbricht, da B1 eine Kontaktlinse verloren hat. Der Wurfuhr-Zeitnehmer muss nun eigenmächtig die Wurfuhr auf 24 Sekunden zurücksetzen. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Da die verteidigende Mannschaft die Unterbrechung verursacht hat, muss die Wurfuhr auf 24 Sekunden zurückgesetzt werden. Im Gegensatz zum absichtlichen Fußspiel muss hier der Schiedsrichter keine neuen 24 Sekunden anzeigen. 29/51 1.8.2026 6 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-52",
+    "question": "Bei noch fünf Sekunden auf der Wurfuhr wirft A1 in Richtung gegnerischer Korb so ein, dass der Ball den Ring berührt. Erlangt Mannschaft A den Ball, erhält sie 14 Sekunden auf der Wurfuhr, erlangt Mannschaft B den Ball, erhält sie 24 Sekunden. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-53",
+    "question": "A1 dribbelt in seinem Vorfeld. Bei noch vier Sekunden auf der Wurfuhr unterbrechen die Schiedsrichter das Spiel, weil sich B1 verletzt hat. Die Wurfuhr bleibt auf vier Sekunden. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Wurfuhr wird auf 14 Sekunden zurückgesetzt, weil ein Gegenspieler sich verletzt hat. 29/51"
+  },
+  {
+    "id": "K-54",
+    "question": "Mannschaft A hat Ballkontrolle und es sind noch zehn Sekunden auf der Wurfuhr, als das Spiel wegen einer Verletzung von A1 unterbrochen wird. Das Spiel wird mit Einwurf für Mannschaft A und zehn Sekunden auf der Wurfuhr fortgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Wurfuhr bleibt bei zehn Sekunden, weil ein Mitspieler sich verletzt hat. 29/51"
+  },
+  {
+    "id": "K-55",
+    "question": "Bei 0:43 im 4. Viertel nach Korberfolg wirft A1 von der Endlinie ein. Auf dem Spielfeld fälscht B1 den eingeworfenen Ball so ab, dass B2 ihn fängt. Spieluhr und Wurfuhr werden bei der Berührung durch B1 gestartet und beim Fangen des Balls durch B2 wird die Wurfuhr auf 24 Sekunden zurückgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Bei der Berührung durch B1 hat noch Mannschaft A Ballkontrolle. 29/51"
+  },
+  {
+    "id": "K-56",
+    "question": "Bei 0:10 auf der Spieluhr und noch sechs Sekunden auf der Wurfuhr tritt B1 im Vorfeld der Mannschaft A absichtlich gegen den Ball. Mannschaft A erhält Einwurf in ihrem Vorfeld und die Wurfuhr wird ausgeschaltet. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Wurfuhr wäre auf 14 Sekunden zu setzen, die Restspielzeit ist aber geringer. 29/51"
+  },
+  {
+    "id": "K-57",
+    "question": "Bei 1:31 im 4. Viertel wird A1 von B1 gefoult. Trainer A nimmt eine Auszeit und entscheidet, dass der nachfolgende Einwurf seiner Mannschaft ins Vorfeld verlegt wird. Die Wurfuhr stand auf 21 Sekunden und wird auf 14 Sekunden gesetzt. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-58",
+    "question": "Während der Ball bei einem Korbwurf von A1 in der Luft ist, wird ein Foul von B2 an A2 gepfiffen (3. Mannschaftsfoul). Die Wurfuhr zeigt acht Sekunden. Anschließend geht der Ball an den Ring, aber nicht in den Korb. Mannschaft A erhält Einwurf mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Ringberührung ist für das Zurücksetzen der Wurfuhr irrelevant. Aufgrund des Fouls von B2 im Vorfeld wird die Wurfuhr auf 14 Sekunden zurückgesetzt. 29/51"
+  },
+  {
+    "id": "K-59",
+    "question": "Bei 1:31 im 4. Viertel dribbelt A1 in ihrem Vorfeld. B1 tippt den Ball in deren Rückfeld, wo der Ball bei noch acht Sekunden auf der Wurfuhr ins Aus geht. Mannschaft A nimmt nun eine Auszeit. Danach bleiben für Mannschaft A noch acht Sekunden auf der Wurfuhr, sowohl bei Einwurf im Vorfeld als auch im Rückfeld. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "29/51 1.8.2026 7 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-60",
+    "question": "A1 passt aus der Ecke seines Vorfelds zurück zu A2 in der Nähe der Mittellinie. Der Ball verfehlt A2 und fliegt ins Rückfeld der Mannschaft A. B1 läuft dem Ball hinterher und nimmt ihn in seinem Vorfeld auf. Die Wurfuhr wird mit 14 Sekunden gestartet. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Ein Wechsel der Ballkontrolle im laufenden Spiel gibt 24 Sekunden auf der Wurfuhr. 29/51"
+  },
+  {
+    "id": "K-61",
+    "question": "Bei einem erfolglosen Korbwurf von A1 prallt der Ball vom Ring ab und wird von Spielerinnen beider Mannschaften getippt. Keine Spielerin erlangt Ballkontrolle, bis A2 in ihrem Rückfeld den Ball fängt. Die Wurfuhr wird jetzt mit 14 Sekunden gestartet. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Mannschaft A erlangt nach ihrem Wurf mit Ringberührung wieder Ballkontrolle. Ob im Vor- oder Rückfeld spielt dabei keine Rolle. 29/51"
+  },
+  {
+    "id": "K-62",
+    "question": "Beim erfolglosen letzten Freiwurf von A1 fängt A2 den Rebound. Die Wurfuhr wird vor den Freiwürfen dunkel geschaltet und beim Erlangen der Ballkontrolle durch A2 mit 14 Sekunden wieder gestartet. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-63",
+    "question": "Erlangt eine Mannschaft neue Ballkontrolle bei noch 23 Sekunden auf der Spieluhr, wird die Anzeige der Wurfuhr dunkel geschaltet. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Sie ist nicht auszuschalten, da sie noch gebraucht werden könnte. 29/51"
+  },
+  {
+    "id": "K-64",
+    "question": "Klemmt der Ball zwischen Ring und Spielbrett ein, gilt das für die Wurfuhr-Regel als Ringberührung. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-65",
+    "question": "Unterbrechen die Schiedsrichter das Spiel, um das Spielfeld wischen zu lassen, wird die Wurfuhr nicht zurückgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-66",
+    "question": "Bei Ballkontrolle der Mannschaft A in ihrem Vorfeld und acht Sekunden auf der Wurfuhr wird gegen B1 ein Technisches Foul verhängt. Nach dem Freiwurf für Mannschaft A erhält Mannschaft A Einwurf nächst der Stelle, wo der Ball zum Zeitpunkt der Spielunterbrechung war und mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Bei einer Restzeit auf der Wurfuhr von mehr als 14 Sekunden bliebe diese größere Restzeit, bei einem Einwurf im Rückfeld gäbe es 24 Sekunden. 29/51"
+  },
+  {
+    "id": "K-67",
+    "question": "Der 1. Schiedsrichter wirft den Ball zum Eröffnungssprungball hoch. Springer A1 tippt den Ball in seinem Rückfeld ins Aus. Mannschaft B erhält Einwurf in ihrem Vorfeld und mit 24 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Mannschaft B erhält Einwurf in ihrem Vorfeld, aber mit 14 Sekunden auf der Wurfuhr. 29/51"
+  },
+  {
+    "id": "K-68",
+    "question": "A1 wirft auf den Korb und der Ball klemmt zwischen Ring und Spielbrett ein. Der nachfolgende Einwurf gemäß Wechselndem Ballbesitz steht Mannschaft A zu. Mannschaft A erhält Einwurf von der gegnerischen Endlinie mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Ball hat den Ring berührt. 29/51 1.8.2026 8 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-69",
+    "question": "Nach einem Korbwurf von A1 verfehlt der Ball den Ring und es kommt zu einem Halteball zwischen A2 und B2. Auf der Wurfuhr stehen noch zehn Sekunden und der Einwurfpfeil steht für Mannschaft A. Mannschaft A erhält Einwurf mit zehn Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-70",
+    "question": "Bei 1:31 im 4. Viertel dribbelt A1 in seinem Rückfeld, als B1 den Ball bei noch 17 Sekunden auf der Wurfuhr ins Aus tippt. Mannschaft A nimmt nun eine Auszeit. Entscheidet sich Trainer A für Einwurf im Rückfeld, bleibt es bei 17 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": "29/51",
+    "explanation": ""
+  },
+  {
+    "id": "K-71",
+    "question": "Bei 1:31 im 4. Viertel dribbelt A1 in seinem Rückfeld, als B1 den Ball bei noch 11 Sekunden auf der Wurfuhr ins Aus tippt. Mannschaft A nimmt nun eine Auszeit. Entscheidet sich Trainer A für Einwurf im Vorfeld, gibt es 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Nach Ausball gibt es die Restzeit von 11 Sekunden. 29/51"
+  },
+  {
+    "id": "K-72",
+    "question": "Bei 20 Sekunden auf der Spieluhr erlangt A1 neue Ballkontrolle auf dem Spielfeld. Bei 18 Sekunden auf der Spieluhr spielt B1 absichtlich den Ball mit dem Fuß. Beim Einwurf der Mannschaft A im Vor- oder Rückfeld bleibt die Wurfuhr dunkel. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Sie ist nicht auszuschalten, da sie noch gebraucht werden könnte. 29/51"
+  },
+  {
+    "id": "K-73",
+    "question": "Bei einem Korbwurf von A1 ist der Ball in der Luft, als bei 17 Sekunden auf der Wurfuhr A2 von B2 im Vorfeld gefoult wird (3. Mannschaftsfoul B). Danach berührt der Ball den Ring. Mannschaft A erhält Einwurf im Vorfeld mit 14 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Mannschaft A erhält Einwurf im Vorfeld mit der Restzeit von 17 Sekunden. 29/51"
+  },
+  {
+    "id": "K-74",
+    "question": "Beim Korbwurf von A1 ist der Ball in der Luft und wird von B1 geblockt. A1 fängt den Ball wieder. Die Wurfuhr wird auf 14 Sekunden gesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Wurfuhr läuft weiter, da weder der Ball den Ring berührt noch B1 Ballkontrolle erlangt hat. 29/51"
+  },
+  {
+    "id": "K-75",
+    "question": "Nach einem Wurf von A1 prallt der Ball vom Ring ab, danach entsteht beim Rebound ein Halteball zwischen A2 und B2. Erhält Mannschaft A gemäß Einwurfpfeil den Einwurf, wird die Wurfuhr mit der verbliebenen Restzeit gestartet. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Bei Einwurf im Vorfeld erhält Mannschaft A 14 Sekunden. 29/51 1.8.2026 9 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-76",
+    "question": "Bei 25,2 Sekunden auf der Spieluhr erlangt Mannschaft A neue Ballkontrolle auf dem Spielfeld. Bei noch einer Sekunde auf der Wurfuhr wirft A1 auf den Korb. Als der Ball in der Luft ist, ertönt das Signal der Wurfuhr. Der Ball verfehlt den Ring und nach weiteren 1,2 Sekunden ertönt das Signal der Spieluhr zum Ende des Spielabschnitts. Die Spieluhr wird nicht korrigiert und der Spielabschnitt ist beendet. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Es hat sich keine Wurfuhr- Regelübertretung durch Mannschaft A ereignet. Der Schiedsrichter wartete ab, ob Mannschaft B sofort und eindeutig die Ballkontrolle erlangt und entschied daher noch nicht auf eine Wurfuhr-Regelübertretung durch Mannschaft A. 29/51"
+  },
+  {
+    "id": "K-77",
+    "question": "Bei 25,2 Sekunden auf der Spieluhr erlangt Mannschaft A neue Ballkontrolle auf dem Spielfeld. Bei noch einer Sekunde auf der Wurfuhr wirft A1 auf den Korb. Als der Ball in der Luft ist, ertönt das Signal der Wurfuhr. Der Ball verfehlt den Ring und A2 fängt den Ball beim Rebound. Die Wurfuhr-Regelübertretung wird gepfiffen, als die Spieluhr noch 0,8 Sekunden anzeigt. Die Spieluhr ist auf 1,2 Sekunden zu korrigieren. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Spieluhr wird nicht korrigiert. Da der Ball den Ring verfehlt und Mannschaft B nicht sofort und eindeutig Ballkontrolle erlangt, sondern erst als A2 den Ball fängt, hat sich eine Wurfuhr-Regelübertretung durch Mannschaft A bei 0,8 Sekunden Restspielzeit ereignet. Das Spiel geht weiter mit Einwurf B nächst der Stelle der Unterbrechung und mit 0,8 Sekunden auf der Spieluhr. 29/51"
+  },
+  {
+    "id": "K-78",
+    "question": "Bei 0:59 im 4. Viertel hat Einwerfer A1 nach Korberfolg von B den Ball in seinen Händen, als im Vorfeld B2 ein Foul an A2 begeht (5. Mannschaftsfoul B). Nach dem einen Freiwurf für das Einwurffoul wird das Spiel mit Einwurf für Mannschaft A und 14 Sekunden auf der Wurfuhr fortgesetzt. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Einwurf erfolgt im Vorfeld nächst der Stelle des Einwurffouls mit 24 Sekunden auf der Wurfuhr. 34"
+  },
+  {
+    "id": "K-79",
+    "question": "A1 wird trotz 5 Fouls wieder eingewechselt und bei einem erfolgreichen Korbwurf gefoult, als der Fehler bemerkt wird. A1 wirft noch den Bonusfreiwurf und muss dann das Spielfeld verlassen. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Korb wird A1 angeschrieben. Der für A1 eintretende Spieler wirft den Bonusfreiwurf, nachdem Mannschaft B den Freiwurf ohne Aufstellung für das Technische Foul (\"B\") gegen Trainer A geworfen hat. 36"
+  },
+  {
+    "id": "K-80",
+    "question": "B1 begeht sein 5. Foul. Anschließend bleibt sie irrtümlich auf dem Spielfeld und begeht während des darauffolgenden Einwurfs ein weiteres Foul. B1 wird ein 6. Foul angeschrieben und Trainer B erhält ein Technisches Foul (\"B\"). Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "B1 wird ein 6. Foul angeschrieben, er muss das Spielfeld verlassen, aber gegen Trainer B wird kein Technisches Foul verhängt, da die Spieluhr noch nicht wieder gestartet wurde. 36"
+  },
+  {
+    "id": "K-81",
+    "question": "Gegen Spielertrainer A1 wird in einer Spielpause ein Technisches Foul der 1. Kategorie verhängt. Dies wird bei A1 auf dem Anschreibebogen als Spielerfoul eingetragen und zählt zu den Mannschaftsfouls in dem darauffolgenden Viertel. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Ein Foul gegen einen Spielertrainer in einer Spielpause wird ihm als Spielerfoul angeschrieben. Alle Spielerfouls in einer Spielpause zählen zu den Mannschaftsfouls der Mannschaft für das nachfolgende Viertel. 36"
+  },
+  {
+    "id": "K-82",
+    "question": "Im 1. Viertel wird gegen B1 ein Technisches Foul der Kategorie 1 verhängt. Im 4. Viertel erhält B1 sein 5. Foul. Auf dem Weg zu seiner Mannschaftsbank wird gegen B1 ein Technisches Foul verhängt. Damit ist B1 spieldisqualifiziert (\"GD\"). Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "B1 ist bereits ein ausgeschlossener Spieler. Das zweite Technische Foul (\"B\") wird seinem Trainer angeschrieben. 36 1.8.2026 10 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-83",
+    "question": "Gegen Spielertrainer A1 wird in einer Spielpause ein Technisches Foul verhängt, welches ihm als Trainer angeschrieben wird. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Es wird ihm als Spieler angeschrieben und zählt zu den Mannschaftsfouls für den folgenden Spielabschnitt. 36"
+  },
+  {
+    "id": "K-84",
+    "question": "A1 begeht im 1. Viertel ein Flagrant Foul und im 3. Viertel ein Technisches Foul der Kategorie 1. Dies führt zu einer Spieldisqualifikation (\"GD\") von A1. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Anschreiber muss die Schiedsrichter (und falls anwesend den Kommissar) sofort darüber informieren und der Zeitnehmer muss die GD-Tafel hochheben. 36"
+  },
+  {
+    "id": "K-85",
+    "question": "Trainer A erhält sein 2. persönliches Technisches Foul (\"C\"). Die Anschreiberin trägt rechts neben dem zweiten C-Foul ein \"GD\" ein. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Anschreiberin muss die Schiedsrichter (und falls anwesend den Kommissar) sofort darüber informieren und der Zeitnehmer muss die GD-Tafel hochheben. 36"
+  },
+  {
+    "id": "K-86",
+    "question": "Ein Technisches Foul gegen A1 in der Pause zwischen Spielabschnitten wird seinem Trainer angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Es wird ihm als Spielerfoul angeschrieben und zählt zu den Mannschaftsfouls der Mannschaft für das nachfolgende Viertel. 36"
+  },
+  {
+    "id": "K-87",
+    "question": "Erzielt ein unbemerkt illegal teilnehmender Spieler (mit 5 Fouls oder 6. Feldspieler) einen Korb, werden die Punkte seinem Mannschaftskapitän angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Punkte werden dem illegal teilnehmenden Spieler angeschrieben. Gegen seinen Trainer wird ein Technisches Foul (\"B\") verhängt. 36"
+  },
+  {
+    "id": "K-88",
+    "question": "Begeht ein unbemerkt illegal teilnehmender Spieler (mit 5 Fouls oder 6. Feldspieler) ein Foul als Spieler, wird das Foul dem illegal teilnehmenden Spieler angeschrieben, auch wenn dies sein 6. Foul ist. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Gegen seinen Trainer wird ein Technisches Foul (\"B\") verhängt. 36"
+  },
+  {
+    "id": "K-89",
+    "question": "Begeht ein mit 5 Fouls ausgeschlossener Spieler in einer Spielpause ein Technisches Foul, wird ihm dies als 6. Foul angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Sein Trainer erhält ein Technisches Foul (\"B\"). 36"
+  },
+  {
+    "id": "K-90",
+    "question": "Unmittelbar nach dem Signal des Zeitnehmers zum Einwechseln von A6 begeht dieser ein Technisches Foul. Dieses wird seinem Trainer angeschrieben. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Ersatzspieler wird erst nach dem Handzeichen für Spielerwechsel und dem Hereinwinken durch den Schiedsrichter zum Spieler. 36"
+  },
+  {
+    "id": "K-91",
+    "question": "Alle Technischen Fouls, die beim Trainer angeschrieben werden, sind von der Kategorie 1.",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Es gibt keine Technischen Fouls der Kategorie 2 gegen den Trainer oder Bankpersonen. 36"
+  },
+  {
+    "id": "K-92",
+    "question": "Disruptive Fouls können in Spielpausen vorkommen.",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Disruptive Fouls sind illegale Kontakte (meist unnötige Kontakte, ohne legitimen Versuch, direkt den Ball zu spielen) während eines belebten Balls. Sie unterbrechen Gegenangriffe, Spielfluss oder verfolgen das Ziel, die Uhren am Ende des Spielabschnitts zu stoppen. Sie können daher nicht in Spielpausen vorkommen. 37 1.8.2026 11 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-93",
+    "question": "Flagrant Fouls können in Spielpausen vorkommen.",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Basketballuntypische Aktionen, überharte Kontakte oder gefährliches, rücksichtsloses, gewalttätiges Vorgehen mit Verletzungsgefahr können sich auch während der Spielpause ereignen. 38"
+  },
+  {
+    "id": "K-94",
+    "question": "Technische Fouls der Kategorie 2 führen nicht zu einer Spieldisqualifikation.",
+    "answer": "Ja",
+    "article": "38",
+    "explanation": ""
+  },
+  {
+    "id": "K-95",
+    "question": "Trainer A werden zwei Technische Fouls (\"B\") angeschrieben für die aktive Beteiligung seines Physiotherapeuten bei einer gewalttätigen Auseinandersetzung auf dem Spielfeld. Da Trainer A bereits ein Technisches Foul (\"C\") hatte, muss er spieldisqualifiziert (\"GD\") werden. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Das Technische Foul (\"BD\") für die aktive Teilnahme des Physiotherapeuten wird auf dem Anschreibebogen nicht eingekreist und zählt nicht zur GD- Foulsumme des Trainers. 39"
+  },
+  {
+    "id": "K-96",
+    "question": "Mannschaft A hat die Ballkontrolle bei noch 5 Sekunden auf der Wurfuhr, als es zwischen beiden Mannschaften zu einer gewalttätigen Auseinandersetzung kommt. Wenn sich alle Strafen aufheben, wird das Spiel fortgesetzt mit Einwurf A und noch 5 Sekunden auf der Wurfuhr. Richtig?",
+    "answer": "Ja",
+    "article": "40",
+    "explanation": ""
+  },
+  {
+    "id": "K-97",
+    "question": "Bei einer Schlägerei auf dem Spielfeld betritt Team-Manager A das Spielfeld und beteiligt sich an der Schlägerei. Er wird disqualifiziert und Trainer A werden zwei Technische Fouls (\"B\" mit Kreis und \"BD\" ohne Kreis) angeschrieben. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Neben dem Technischen Foul für das Betreten des Spielfelds durch die Bankperson erhält Trainer A ein Technisches Foul für die aktive Beteiligung des Team- Managers. Dieses Technische Foul wird nicht eingekreist, da es nicht zur GD-Foulsumme des Trainers zählt. 40"
+  },
+  {
+    "id": "K-98",
+    "question": "Bei einer Spieldisqualifikation (\"GD\") muss der Anschreiber die GD- Tafel hochheben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Anschreiber muss die Schiedsrichter (und falls anwesend den Kommissar) sofort darüber informieren und der Zeitnehmer muss die GD-Tafel hochheben. 41"
+  },
+  {
+    "id": "K-99",
+    "question": "Spielertrainer A1 hat als Spieler vier Fouls und als Spielertrainer ein Technisches Foul (\"C\") begangen. Er darf weiterhin als Spieler tätig sein. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Er darf nicht mehr als Spieler fungieren, da er persönlich als Spieler und Trainer insgesamt fünf Fouls begangen hat. 41"
+  },
+  {
+    "id": "K-100",
+    "question": "Spielertrainer A1 hat als Spieler vier Fouls und als Spielertrainer ein Technisches Foul (\"C\") begangen. Er darf weiterhin als Trainer tätig sein. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Als Trainer wurde gegen ihn erst ein Technisches Foul verhängt. Er darf deshalb weiter als Trainer tätig sein. 41"
+  },
+  {
+    "id": "K-101",
+    "question": "Spielertrainer A1 hat sowohl als Spieler ein Technisches Foul der Kategorie 1 als auch als Trainer ein Technisches Foul (\"C\") begangen. Er ist damit in beiden Funktionen spieldisqualifiziert (\"GD\"). Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "A1 hat als Spieler und Trainer insgesamt zwei Technische Fouls begangen, die zur Spieldisqualifikation führen. 41 1.8.2026 12 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-102",
+    "question": "B1 begeht sein zweites Flagrant Foul und ist somit zu disqualifizieren (\"GD\"). Nach dem Foul erhält er zusätzlich ein Technisches Foul. Dieses wird seinem Trainer angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Das Technische Foul wurde gegen einen disqualifizierten Spieler verhängt. Es kann weder B1 noch seinem Trainer angerechnet werden und wird nicht beachtet. 41"
+  },
+  {
+    "id": "K-103",
+    "question": "Gegen Spieler B1 wird sein 5. Foul verhängt. Er bleibt aber irrtümlich auf dem Spielfeld. Anschließend wird B1 bei einem erfolgreichen Korbwurf gefoult. B1 muss nun das Spielfeld verlassen. Die Punkte werden dem für ihn eintretenden Spieler B6 angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Punkte werden B1 angeschrieben. Trainer B erhält ein Technisches Foul (\"B\") und Mannschaft A einen Freiwurf. 41"
+  },
+  {
+    "id": "K-104",
+    "question": "Gegen A1 wird ein Persönliches Foul gepfiffen und unmittelbar darauf ein Flagrant Foul. Da das Persönliche Foul sein 5. Spielerfoul war, wird ihm das Flagrant Foul als 6. Foul angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Für das Flagrant Foul wird Trainer A ein Technisches Foul (\"B\") angeschrieben und mit einem Freiwurf bestraft. Ein 6. Spielerfoul ist nur möglich, wenn A1 nach seinem 5. Foul regelwidrig weiter oder wieder am Spiel teilnehmen und ein Foul begehen würde. 41"
+  },
+  {
+    "id": "K-105",
+    "question": "Während der Spielpause zwischen dem 1. und 2. Viertel wird gegen A1 und B1 je ein Technisches Foul verhängt. Der Einwurfpfeil zeigt in Richtung für Mannschaft A. Nach dem Einwurf A zu Beginn des 2. Viertels wird der Einwurfpfeil gedreht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Die Strafen für die Technischen Fouls heben sich auf. 43"
+  },
+  {
+    "id": "K-106",
+    "question": "A1 begeht einen Schrittfehler. Bevor dem Spieler B1 der Ball zum Einwurf zur Verfügung steht, wird auf Persönliches Foul gegen B2 entschieden. Das Spiel wird mit Einwurf A fortgesetzt und die Wurfuhr wird nicht zurückgesetzt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Kompensation ist noch möglich. Mannschaft A bleibt in Ballkontrolle und erhält Einwurf mit der Restzeit auf der Wurfuhr. 43"
+  },
+  {
+    "id": "K-107",
+    "question": "B1 foult A1 bei 3:37 auf der Spieluhr im 2. Viertel (4. Mannschaftsfoul B). A1 erhält irrtümlich zwei Freiwürfe. Der Fehler wird erkannt bei 0:39 auf der Spieluhr im 4. Viertel und kann noch korrigiert werden. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der Korrigierbare Fehler der 1. Kategorie kann nur bis Beginn der letzten zwei Minuten des 4. Viertels korrigiert werden und bleibt somit bestehen. 45"
+  },
+  {
+    "id": "K-108",
+    "question": "Bei 1:14 auf der Spieluhr im 4. Viertel wird A1 bei seinem erfolglosen Korbwurf für 2 Punkte gefoult. Dennoch gibt der Schiedsrichter 2 Punkte und einen Bonusfreiwurf für A1. Das Spiel endet ohne weitere Spielunterbrechungen. Der Fehler wird während der Spielpause zur 1. Verlängerung erkannt und kann noch korrigiert werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Nächste und letzte Gelegenheit zur Korrektur. 45"
+  },
+  {
+    "id": "K-109",
+    "question": "Der Anschreiber ist verpflichtet, den Trainer durch einen Schiedsrichter verständigen zu lassen, wenn der Trainer in der laufenden Halbzeit oder Verlängerung keine Auszeit mehr zur Verfügung hat. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "49 1.8.2026 13 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-110",
+    "question": "Kurz vor dem Sprungball – der Schiedsrichter ist bereits im Kreis – bemerkt der Anschreiber, dass einer der Spieler auf dem Spielfeld nicht zur gekennzeichneten Ersten Fünf gehört. Er lässt das Signal des Zeitnehmers ertönen, da der Fehler noch korrigiert werden kann. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der richtige Spieler muss eingewechselt werden, solange das Spiel noch nicht begonnen hat, also der Ball die Hand/Hände des Schiedsrichters beim Eröffnungssprungball noch nicht verlassen hat. 49"
+  },
+  {
+    "id": "K-111",
+    "question": "Bei 2:03 im 4. Viertel erzielt A1 einen Korb. Nach dem Korberfolg rollt der Ball aus dem Spielfeld, wobei fünf Sekunden auf der Spieluhr verstreichen. Die Zeitnehmerin stoppt die Spieluhr bei 2:00. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Spieluhr wird nur gestoppt, wenn ein Korb bei 2:00 oder später erzielt wird oder wenn der Schiedsrichter pfeift. 50"
+  },
+  {
+    "id": "K-112",
+    "question": "Auch in den letzten zwei Spielminuten jeder Verlängerung wird nach Korberfolg die Spieluhr gestoppt. Richtig?",
+    "answer": "Ja",
+    "article": "50",
+    "explanation": ""
+  },
+  {
+    "id": "K-113",
+    "question": "Die 2. Schiedsrichterin pfeift nach dem legalen Tipp beim Eröffnungssprungball eine Regelübertretung von A1 und spricht Mannschaft B den Ball zum Einwurf im Vorfeld zu. Die Spieluhr zeigt 9:58. Der Zeitnehmer setzt die Spieluhr auf 10:00 zurück. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Regelübertretung erfolgte nach Spielbeginn. Einwurf Mannschaft B und die Spieluhr wird nicht zurückgesetzt. 50"
+  },
+  {
+    "id": "K-114",
+    "question": "Vor Spielbeginn und in der Halbzeitpause muss der Zeitnehmer sowohl bei 3:00 als auch bei 1:30 Minuten die Schiedsrichter benachrichtigen. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Bei 1:30 Minuten begeben sich die Spieler zu ihrer Mannschaftsbank. 50"
+  },
+  {
+    "id": "K-115",
+    "question": "Der Mannschaftsfoulanzeiger wird aufgestellt, sobald der Einwerferin bzw. Freiwerferin nach dem 4. Mannschaftsfoul der Ball zur Verfügung steht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Der Mannschaftsfoulanzeiger wird aufgestellt, sobald der Ball nach dem 4. Mannschaftsfoul belebt ist. 50"
+  },
+  {
+    "id": "K-116",
+    "question": "Wenn auf der Anzeigetafel die Anzahl der einzelnen Spielerfouls angezeigt wird, ist die Verwendung der Schilder für Spielerfouls nicht erforderlich. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Schilder für Spielerfouls müssen immer verwendet werden. Nur dadurch werden die Mannschaften regelgerecht über die Anzahl der Fouls der Spieler informiert. 50"
+  },
+  {
+    "id": "K-117",
+    "question": "Die Schiedsrichter haben das zu leise Signal für einen Spielerwechsel nicht gehört, geben A1 den Ball zum Einwurf frei und lassen das Spiel fortsetzen. Die Zeitnehmerin startet die Spieluhr nicht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Das Kampfgericht muss zusätzlich auf sich aufmerksam machen. 50"
+  },
+  {
+    "id": "K-118",
+    "question": "Die Spieluhr kann auch zum Messen der Auszeiten verwendet werden. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die verbleibende Spielzeit muss stets sichtbar bleiben. 50"
+  },
+  {
+    "id": "K-119",
+    "question": "Vor Beginn des 2. und 4. Viertels sowie jeder Verlängerung muss der Zeitnehmer nach 1:30 Minuten auf seiner Stoppuhr sein Signal ertönen lassen, der 1. Schiedsrichter pfeift und die Schiedsrichter bitten die Mannschaften aufs Spielfeld. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "So kann das Spiel ohne Verzug fortgesetzt werden. 50 1.8.2026 14 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-120",
+    "question": "Wenn ein Trainer oder Spieler wegen Technischer Fouls der Kategorie 1 und/oder Flagrant Fouls spieldisqualifiziert (\"GD\") werden muss, ist der Zeitnehmer verpflichtet, dies den Schiedsrichtern sofort mitzuteilen, indem er sein Signal ertönen lässt und die GD-Tafel hochhebt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Er arbeitet dabei mit dem Anschreiber zusammen, der darüber den Zeitnehmer sofort informieren muss. 50"
+  },
+  {
+    "id": "K-121",
+    "question": "Der Zeitnehmer sorgt dafür, dass zum richtigen Zeitpunkt die Mannschaftsfoulanzeiger auf der jeweiligen Seite des Anschreibertischs aufgestellt werden. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Er arbeitet dabei mit dem Anschreiber und weiteren Personen am Anschreibertisch zusammen, die an der jeweiligen Seite des Anschreibertischs sitzen. 50"
+  },
+  {
+    "id": "K-122",
+    "question": "Der letzte Freiwurf von A1 ist erfolgreich. Beim anschließenden Einwurf von B1 berührt B2 auf dem Spielfeld den Ball, erlangt aber keine Ballkontrolle. Spieluhr und Wurfuhr werden in Gang gesetzt, sobald B2 den Ball berührt. Richtig?",
+    "answer": "Ja",
+    "article": "50",
+    "explanation": ""
+  },
+  {
+    "id": "K-123",
+    "question": "Auch wenn der Ball beim Eröffnungssprungball von einem Springer illegal berührt wird, ist die Spieluhr zu starten. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Spieluhr wird nur bei einem legalen Tipp beim Eröffnungssprungball gestartet. 50"
+  },
+  {
+    "id": "K-124",
+    "question": "Auf dem Anschreibebogen werden alle Technischen Fouls gegen Spieler eingekreist.",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Nur Technische Fouls der Kategorie 1 gegen Spieler werden eingekreist. B.8"
+  },
+  {
+    "id": "K-125",
+    "question": "Disruptive Fouls führen nicht zu einer Spieldisqualifikation.",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "B.8"
+  },
+  {
+    "id": "K-126",
+    "question": "Technische Fouls gegen Mannschaftsbegleiter (BD) zählen zu einer Spieldisqualifikation des Trainers und werden deshalb eingekreist.",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Nur bei einer Gewalttätigkeit werden Technische Fouls gegen Mannschaftsbegleiter, die nicht auf dem Anschreibebogen stehen, nicht eingekreist. B.8"
+  },
+  {
+    "id": "K-127",
+    "question": "Technische Fouls gegen Mannschaftsbegleiter bei einer Gewalttätigkeit (BD) zählen zu einer Spieldisqualifikation des Trainers und werden deshalb eingekreist.",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Bei einer Gewalttätigkeit werden Technische Fouls gegen Mannschaftsbegleiter, die nicht auf dem Anschreibebogen stehen, nicht eingekreist. B.8"
+  },
+  {
+    "id": "K-128",
+    "question": "Der Anschreiber bereitet die Grundeintragungen auf dem Anschreibebogen (Kopfleiste, Spielernamen usw.) in Schwarz vor und will das 1. Viertel dann in Rot eintragen. Das Ankreuzen der Ersten Fünf erfolgt in Rot. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-129",
+    "question": "Alle Eintragungen in Verlängerungen – unabhängig von der Anzahl der Verlängerungen – erfolgen sämtlich in der Farbe des 4. Viertels. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-130",
+    "question": "In der 2. Spielminute der 2. Verlängerung begeht Spieler B1 ein Foul an A1. Das Foul wird mit Spielminute \"47\" in die Foulspalte eingetragen. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-131",
+    "question": "Wenn ein Schiedsrichter einen Korb wegen Goaltendings gibt, werden die zustehenden Punkte dem Kapitän der Mannschaft auf dem Spielfeld angeschrieben. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Punkte werden dem Werfer angeschrieben. KRHB 1.8.2026 15 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-132",
+    "question": "Ersatzspieler A6 wird in der 3. Spielminute des 4. Viertels disqualifiziert. Das Foul wird bei Trainer A als Technisches Foul (\"B\") mit der Spielminutenzahl eingetragen. Bei A6 werden die noch freien Foulkästchen mit je einem \"D\" ausgefüllt. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-133",
+    "question": "Wird ein Spieler, der bereits fünf Fouls begangen hat, wegen Gewalttätigkeit disqualifiziert, weil er den Mannschaftsbankbereich verlassen hat, werden ein \"D\" und ein \"F\" rechts neben dem letzten Foulkästchen eingetragen. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-134",
+    "question": "Ein Technisches Foul in der Halbzeitpause gegen einen Spieler wird diesem mit der Spielminute \"IN\" als Spieler angeschrieben und zählt zu den Mannschaftsfouls des 3. Viertels. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Ein Foul in der Spielpause vor Spielbeginn wird mit Spielminute „0“ eingetragen. In Spielpausen sind alle spielberechtigten Mannschaftsmitglieder Spieler. KRHB"
+  },
+  {
+    "id": "K-135",
+    "question": "Ein Trainer ist zu disqualifizieren, wenn er mit drei eingekreisten B- Fouls oder zwei C-Fouls oder zwei eingekreisten B- und einem C- Foul bestraft wurde. Die Disqualifikation wird durch ein \"GD\" (Game disqualification) rechts neben dem letzten B- oder C-Foul gekennzeichnet. Richtig?",
+    "answer": "Ja",
+    "article": "KRHB",
+    "explanation": ""
+  },
+  {
+    "id": "K-136",
+    "question": "Wird ein Spieler wegen Flagrant Fouls und/oder Technischer Fouls der Kategorie 1 spieldisqualifiziert (\"GD\"), muss der Schiedsrichter bzw. die Kommissarin dies auf der Rückseite des Anschreibebogens vermerken. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Bei einer Spieldisqualifikation (\"GD\") sind kein Vermerk auf der Rückseite des Anschreibebogens und kein Bericht an die spielleitende Stelle erforderlich. Der Zeitnehmer hebt die GD-Tafel. KRHB"
+  },
+  {
+    "id": "K-137",
+    "question": "Ein Spieler ist zu disqualifizieren mit seinem zweiten Flagrant Foul, seinem zweiten Technischen Foul der Kategorie 1 oder einem Flagrant und einem Technischen Foul der Kategorie 1. Die Disqualifikation wird durch ein \"D\" rechts neben dem zweiten Foul dieser Art gekennzeichnet. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Dies wird mit einem \"GD\" (Spieldisqualifikation) gekennzeichnet. Der Zeitnehmer hebt die GD-Tafel. KRHB"
+  },
+  {
+    "id": "K-138",
+    "question": "Ist die Spieluhr während der letzten 2 Spielminuten des 4. Viertels nach einem Korb gestoppt, darf die Mannschaft des Korbwerfers Spielerwechsel durchführen. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Nur die Mannschaft darf wechseln, gegen die ein Korb erzielt wurde. In diesem Fall darf auch die andere Mannschaft wechseln. KRHB"
+  },
+  {
+    "id": "K-139",
+    "question": "In der Halbzeitpause muss der Einwurfpfeil umgedreht werden. Dafür verantwortlich ist allein die Anschreiberin. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Der 1. Schiedsrichter bzw. Kommissar muss dabei sein. KRHB"
+  },
+  {
+    "id": "K-140",
+    "question": "Spätestens 20 Minuten vor Spielbeginn setzt der Zeitnehmer die Spieluhr in Gang, um Zuschauern und allen am Spiel Beteiligten anzuzeigen, wie viel Zeit bis zum Spielbeginn verbleibt. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Einzelne Veranstalter schreiben mehr als 20 Minuten vor. KRHB"
+  },
+  {
+    "id": "K-141",
+    "question": "Der Zeitnehmer stellt 3:30 Minuten vor Spielbeginn – während der laufenden Mannschaftsvorstellung – die Spieluhr auf 10:00 ein. Richtig?",
+    "answer": "Nein",
+    "article": null,
+    "explanation": "Die Spieluhr wird erst kurz vor Spielbeginn auf 10:00 gestellt. KRHB 1.8.2026 16 von 17 Deutscher Basketball Bund e.V. AG Regeln Kampfrichterfragen 2026 Nr. Frage J N Antwort Art."
+  },
+  {
+    "id": "K-142",
+    "question": "Ist die Wurfuhr-Zeitnehmerin in einer Situation im Zweifel, ob sie ihre Uhr stoppen und zurücksetzen oder weiterlaufen lassen muss, z. B. bei der Frage, ob der Ball am Ring war oder nicht oder ob die Ballkontrolle gewechselt hat, stoppt sie die Wurfuhr nicht. Richtig?",
+    "answer": "Ja",
+    "article": null,
+    "explanation": "Bei einem irrtümlichen Signal geht das Spiel grundsätzlich ohne Unterbrechung weiter, während ein irrtümliches Stoppen immer zu einer Spielunterbrechung führt. KRHB"
+  }
+]
