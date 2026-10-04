@@ -37,7 +37,7 @@ class QCatalogue:
     question: Optional[str]
     answer: Optional[str]
     article: Optional[str]
-    explaination: Optional[str]
+    explanation: Optional[str]
 
 @dataclass
 class QMatch:
@@ -52,7 +52,7 @@ def _load_question_catalogue():
         q.get("question"),
         q.get("answer"),
         q.get("article"),
-        q.get("explaination")
+        q.get("explanation")
     ) for q in questions]
 ANSWERS = _load_question_catalogue()
 
@@ -238,9 +238,9 @@ def _output_solution(answers: list[QMatch]):
                    subsequent_indent="    "))
         print(f"    Answer: {match.solution.answer or 'Unknown'}")
 
-        if match.solution.explaination:
+        if match.solution.explanation:
             print(fill(
-                f"Explanation: {match.solution.explaination}",
+                f"Explanation: {match.solution.explanation}",
                 width=width - 4,
                 initial_indent="    ",
                 subsequent_indent="               ",
