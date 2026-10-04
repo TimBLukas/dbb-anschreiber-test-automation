@@ -5,6 +5,53 @@
 > by the DBB, and must not be used to obtain a qualification, certificate, or
 > assessment result dishonestly.
 
+## License scope
+
+The original source code in this repository is licensed under the **GNU
+General Public License, version 3 or later (GPL-3.0-or-later)**. See
+[`LICENSE`](LICENSE) for the license terms.
+
+This license applies only to original source code for which the repository
+author holds the necessary rights. It does **not** grant permission to copy,
+publish, modify, or redistribute:
+
+- `kampfrichter_fragenkatalog.pdf`;
+- `questions.json`, including its questions, answers, explanations, and
+  references;
+- `test.html` or any HTML, website content, assessment content, or personal
+  data supplied by a user;
+- DBB materials, trademarks, logos, or other third-party content; or
+- third-party dependencies, which remain under their own licenses.
+
+The PDF, catalogue, and HTML files are provided only as local input/example
+materials where their inclusion is legally permitted. Before redistributing
+this repository or any of these files, verify that you have the necessary
+copyright, database, contractual, and other permissions.
+
+## No warranty and limitation of liability
+
+To the maximum extent permitted by applicable law, the original source code,
+the PDF, the question catalogue, the answers, the explanations, the generated
+output, and all other repository materials are provided **“as is” and without
+any warranty of any kind**, whether express or implied. This includes, without
+limitation, warranties of merchantability, fitness for a particular purpose,
+accuracy, completeness, non-infringement, availability, security, and
+correctness.
+
+To the maximum extent permitted by applicable law, the repository author and
+contributors shall not be liable for any direct, indirect, incidental,
+special, exemplary, consequential, or other loss or damage arising from or
+related to access to, use of, inability to use, modification, distribution, or
+reliance on this repository or its output. This includes, without limitation,
+loss of data, privacy issues, account restrictions, failed assessments,
+disciplinary consequences, financial loss, or any claim relating to the PDF,
+question catalogue, answers, explanations, generated output, or code.
+
+Nothing in this section excludes or limits liability that cannot lawfully be
+excluded or limited under the applicable law. The GPL-3.0-or-later license
+terms also apply to the licensed source code, including their warranty and
+liability provisions.
+
 ## Overview
 
 This project is a small Python utility that reads questions from a locally
@@ -16,6 +63,7 @@ answer and available explanation.
 The project is intended to help with:
 
 - studying question wording;
+- self validation for test;
 - inspecting and testing HTML extraction logic;
 - comparing a saved quiz page with a personal study catalogue; and
 - experimenting with Python, HTML parsing, and fuzzy matching.
@@ -64,11 +112,11 @@ interpretation, professional advice, or an official answer key. You remain
 responsible for independently checking the output against current, authorized
 source material.
 
-To the extent permitted by applicable law, the author and contributors are not
-liable for losses, penalties, failed assessments, account action, disciplinary
-action, privacy issues, or other consequences resulting from use or misuse of
-this software. This notice does not attempt to exclude liability where such an
-exclusion is not legally permitted.
+The no-warranty and limitation-of-liability terms in [No warranty and
+limitation of liability](#no-warranty-and-limitation-of-liability) apply to the
+code, PDF, catalogue, answers, explanations, generated output, and other
+materials in this repository. This notice does not attempt to exclude liability
+where such an exclusion is not legally permitted.
 
 ## How it works
 
@@ -77,7 +125,7 @@ The current script performs these steps:
 1. Loads `questions.json` from the current working directory.
 2. Loads `test.html` from the current working directory.
 3. Parses the HTML with BeautifulSoup.
-4. Extracts text from Moodle-style `div.que div.qtext` elements inside
+4. Extracts text from `div.que div.qtext` elements inside
    `div#page`.
 5. Normalizes question text by lowercasing it, removing punctuation, and
    collapsing whitespace.
@@ -88,80 +136,414 @@ The current script performs these steps:
 The matching process is approximate. A high similarity score does not prove
 that the match is correct, and the current script does not display a confidence
 threshold or ask for confirmation before printing a result.
+During the testing process of this code ~15 Tests were performed all passed with 100% accuracy.
 
 ## Requirements
 
-- Python 3.14 or newer, as specified in `pyproject.toml`;
-- the dependencies declared in `pyproject.toml`;
-- a locally saved HTML file named `test.html`; and
-- a locally maintained `questions.json` file in the expected format.
+- The program manages Python and its required packages through [`uv`](https://docs.astral.sh/uv/).
+- A local copy of this repository.
+- A locally saved HTML file named `test.html`, when using manual mode.
+- A locally maintained `questions.json` file.
+- Google Chrome or Chromium, when using the automated browser mode on a windows or linux machine, Safari with the necessary Access rights on MacOS.
 
-The project currently declares these Python packages:
+You do **not** need to install Python separately, create a virtual environment,
+activate a virtual environment, or install the Python packages manually. `uv`
+creates and manages the project environment for you.
+
+The project uses these packages internally:
 
 - `beautifulsoup4` for HTML parsing;
 - `rapidfuzz` for fuzzy matching;
-- `requests` for the unused HTTP helper; and
-- `pymupdf` for the separate PDF catalogue tooling.
+- `playwright` for connecting to the automated browser workflow; and
+- `pymupdf` for the separate PDF catalogue-generation utility.
 
-## Installation
+## Installation and first use
 
-### Using `uv`
+This section is written for people who do not normally use Python. You only
+need to complete the installation of `uv` once. After that, `uv` can create the
+project environment and start the program for you.
 
-From the repository directory:
+### Step 1: Download the project
+
+Download or copy this repository to your computer. If you received the project
+as a ZIP file:
+
+1. Open the ZIP file.
+2. Extract the complete folder to a location that is easy to find, such as
+   your Desktop or Documents folder.
+3. Open the extracted project folder.
+
+The folder must contain files such as `main.py`, `pyproject.toml`,
+`questions.json`, and `uv.lock`. Do not run the commands below from inside the
+ZIP file itself.
+
+If you use GitHub directly, select **Code** and then **Download ZIP**, unless
+you already know how to use Git, in which case you can run:
+`git clone git@github.com:TimBLukas/dbb-anschreiber-test-automation.git`
+to obtain the source code.
+
+### Step 2: Install `uv`
+
+`uv` is a small rust based tool that prepares the Python environment automatically. It is
+the only additional tool that needs to be installed manually.
+
+Use the instructions for your operating system.
+
+#### macOS or Linux
+
+1. Open the **Terminal** application.
+   - On macOS, press `Command + Space`, type `Terminal`, and press `Return`.
+   - On Linux, open your distribution's Terminal application.
+2. Copy and paste the following command into the Terminal.
+3. Press `Return` and follow any instructions shown on screen:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+This Bash Command will load the installation script (shell-script) and execute it using `sh`.
+
+4. Close the Terminal window completely.
+5. Open a new Terminal window. Opening a new window makes the newly installed
+   `uv` command available.
+6. Check that the installation worked:
+
+```bash
+uv --version
+```
+
+You should see a version number, for example `uv 0.x.y`. The exact number is
+not important.
+
+#### Windows
+
+1. Open **PowerShell**.
+   - Press the Windows key, type `PowerShell`, and open **Windows
+     PowerShell**.
+2. Copy and paste the following command.
+3. Press `Enter` and follow any instructions shown on screen:
+
+```powershell
+irm https://astral.sh/uv/install.ps1 | iex
+```
+
+4. Close PowerShell completely.
+5. Open a new PowerShell window.
+6. Check that the installation worked:
+
+```powershell
+uv --version
+```
+
+You should see a version number, for example `uv 0.x.y`. The exact number is
+not important.
+
+### Step 3: Open a terminal in the project folder
+
+The commands in the next steps must be run **inside the project folder**.
+There are several ways to do this.
+
+#### macOS
+
+1. Open **Terminal**.
+2. Type `cd `, including the space at the end.
+3. Drag the project folder from Finder into the Terminal window. macOS will
+   insert the folder's path.
+4. Press `Return`.
+
+The command will look similar to this:
+
+```bash
+cd /Users/your-name/Documents/dbb-anschreiber-test-automation
+```
+
+#### Windows
+
+1. Open the project folder in File Explorer.
+2. Click the address bar at the top of the window.
+3. Type `powershell`.
+4. Press `Enter`.
+
+A PowerShell window should open with the project folder already selected.
+
+#### Linux
+
+Open a Terminal window and change to the project folder with `cd`, for example:
+
+```bash
+cd ~/Documents/dbb-anschreiber-test-automation
+```
+
+### Step 4: Prepare the project
+
+In the terminal window that is open in the project folder, run:
 
 ```bash
 uv sync
 ```
 
-Run the interactive CLI with:
+The first run may take a few minutes. `uv` will:
+
+1. find or install a compatible Python version;
+2. create a private `.venv` folder inside the project;
+3. install the required packages;
+4. use `uv.lock` so that the same dependency versions are installed; and
+5. install this project and its `anschreiber-helper` command.
+
+You do not need to run `source .venv/bin/activate`, `.venv\Scripts\activate`,
+or any similar activation command. `uv run` automatically uses the environment
+created by `uv sync`.
+
+Run `uv sync` again whenever the project is updated or when the dependencies
+change. It is safe to run the command more than once.
+
+### Step 5: Run the program
+
+The simplest command is:
 
 ```bash
-uv run anschreiber-helper
+uv run dbb-anschreiber-test-automation
 ```
 
-The CLI asks whether to use the local `test.html` file or the browser
-workflow. You can also select a mode directly:
+The program displays a menu:
 
-```bash
-uv run anschreiber-helper --manual
-uv run anschreiber-helper --automated
+```text
+How would you like to provide the quiz HTML?
+  1. Use a local test.html file
+  2. Open the browser workflow
+Choose 1 or 2 [1]:
 ```
 
-Use `--help` to see all options. For custom file locations:
+Enter `1` and press `Return` to use the local `test.html` file. This is the
+recommended first run because it does not require browser automation.
 
-```bash
-uv run anschreiber-helper --manual --html /path/to/test.html \
-  --catalogue /path/to/questions.json
-```
+Enter `2` and press `Return` to use the automated browser workflow. This
+requires Google Chrome or Chromium to be installed and requires you to be
+authorized to access the relevant page.
 
-### Using a virtual environment and `pip`
+### Recommended first run: local HTML mode
+> Note that this mode requires some knowledge on how to obtain a websites HTML code.
+> The automated version will do this step for you.
+> The manual version however is the most undetectable one since there is no indication of external scripts running.
 
-Create and activate a virtual environment with Python 3.14 or newer, then
-install the project:
+Before starting the program, place the HTML file of your currently running test in the project
+folder and name it exactly `test.html`.
+There is a demonstration file available so you can inspect and run a sample test with that file.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e .
-```
-
-On Windows PowerShell, activation is:
-
-```powershell
-.venv\Scripts\Activate.ps1
+```text
+test.html
 ```
 
 Then run:
 
 ```bash
-anschreiber-helper
+uv run dbb-anschreiber-test-automation --manual
 ```
 
-If the command is not available after installation, run `python main.py`
-instead.
+or run:
+```bash
+uv run dbb-anschreiber-test-automation
+```
 
-Do not copy credentials, cookies, session tokens, or other secrets into this
-repository.
+and select 1 (default).
+
+The program reads `test.html`, compares its questions with `questions.json`,
+and prints the closest catalogue answer and explanation for each question.
+The HTML is read locally; this mode does not log in to a website or upload the
+file.
+
+If your HTML file has another name or is stored elsewhere, provide its path:
+
+```bash
+uv run anschreiber-helper --manual --html "/path/to/my-quiz.html"
+```
+
+On Windows, a path can look like this:
+
+```powershell
+uv run anschreiber-helper --manual --html "C:\Users\YourName\Documents\my-quiz.html"
+```
+
+If `questions.json` is not in the project folder, provide its path as well:
+
+```bash
+uv run dbb-anschreiber-test-automation --manual \
+  --html "/path/to/my-quiz.html" \
+  --catalogue "/path/to/questions.json"
+```
+
+### Automated browser mode
+
+The automated mode starts or connects to a supported browser so that you can
+open the authorized quiz page and manually complete the login and navigation
+steps. It does not submit answers or modify the website.
+
+Start it with:
+
+```bash
+uv run dbb-anschreiber-test-automation --automated
+```
+
+The program will tell you what to do. In general:
+
+1. Log in only to an account and website that you are authorized to use.
+2. Open the relevant test page.
+3. Start the test when instructed by the program.
+4. Return to the terminal and press `Enter`.
+5. Review the generated output manually.
+
+On macOS, the current Safari workflow may ask for permission to control Safari.
+Allow this only if you trust the local script and are authorized to use the
+page. On Windows and Linux, the automated workflow searches for an installed
+Google Chrome or Chromium executable and will launch that application in the debugging mode
+to allow it to view loaded html content.
+
+The current automated workflow does not normally require a separate
+`playwright install` command because it connects to an installed desktop
+browser. If the program reports that Chrome or Chromium cannot be found, install
+one of those browsers and run the command again.
+
+### Running the program again
+
+After the initial setup, open a terminal in the project folder and run:
+
+```bash
+uv run dbb-anschreiber-test-automation
+```
+
+You do not need to reinstall `uv`, recreate the environment, or install the
+packages again each time. If the project has been updated, run `uv sync` first.
+
+### Useful commands
+
+Display the available command-line options:
+
+```bash
+uv run dbb-anschreiber-test-automation --help
+```
+
+Display the program version:
+
+```bash
+uv run dbb-anschreiber-test-automation --version
+```
+
+Use manual mode without the interactive menu:
+
+```bash
+uv run dbb-anschreiber-test-automation --manual
+```
+
+Use automated mode without the interactive menu:
+
+```bash
+uv run ddb-anschreiber-test-automation --automated
+```
+
+Generate `questions.json` from the included PDF catalogue:
+
+```bash
+uv run python pdf_to_json.py
+```
+
+That command expects `kampfrichter_fragenkatalog.pdf` in the project folder
+and writes `questions.json` there. Only run it when you are authorized to use
+the PDF and its contents. It may replace the existing catalogue file.
+
+### Troubleshooting
+
+#### “uv: command not found” or “uv is not recognized”
+
+Close the terminal and open a new one. The installer updates the command search
+path, and an already-open terminal may not see that change.
+
+If the command still cannot be found, install `uv` again using the official
+instructions:
+
+<https://docs.astral.sh/uv/getting-started/installation/>
+
+#### `uv sync` fails while downloading packages
+
+Check your internet connection and run the command again:
+
+```bash
+uv sync
+```
+
+#### The program says that `test.html` was not found
+
+Make sure the file is in the project folder and is named exactly `test.html`,
+or provide the complete path with `--html`:
+
+```bash
+uv run dbb-anschreiber-test-automation --manual --html "/path/to/test.html"
+```
+
+#### The program says that `questions.json` was not found
+
+Make sure the catalogue file is in the project folder, or provide its path
+with `--catalogue`:
+
+```bash
+uv run dbb-anschreiber-test-automation --manual --catalogue "/path/to/questions.json"
+```
+
+#### The program says that no questions were found
+
+The supplied HTML may not have the structure expected by the parser, may be
+incomplete, or may not be the quiz page itself. Check that it is an authorized
+saved copy of the page and that it contains the question text.
+
+#### The automated mode cannot find Chrome or Chromium
+
+Install Google Chrome or Chromium, then run:
+
+```bash
+uv run dbb-anschreiber-test-automation --automated
+```
+
+You can use manual mode instead if you already have a saved HTML file:
+
+```bash
+uv run dbb-anschreiber-test-automation --manual
+```
+
+#### The output is incorrect
+
+The program uses approximate text matching. It always selects the closest
+catalogue question, even when that match is wrong or uncertain. Check every
+result against current, authorized official materials. Do not treat the output
+as an automatically correct answer.
+
+### Manual Python setup (advanced)
+
+Most users should use `uv` as described above. If you already maintain Python
+projects and intentionally want to manage the environment yourself, you can
+install Python 3.14 or newer, create a virtual environment, and install the
+project with `pip`:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -e .
+```
+
+On Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+python -m pip install -e .
+```
+
+You can then run:
+
+```bash
+dbb-anschreiber-test-automation
+```
+
+This advanced method is not required when using `uv`. Do not copy credentials,
+cookies, session tokens, or other secrets into this repository.
 
 ## Input files
 
@@ -177,6 +559,8 @@ process. The current extractor expects a container with this structure:
   </div>
 </div>
 ```
+
+If the code of the DBB website should change, the script will no longer work until it is updated!
 
 The script reads this file locally; it does not need to log in to a website.
 Do not save or commit HTML containing personal data, private URLs, session
@@ -229,22 +613,7 @@ authoritative decision or an automatically correct assessment response.
 For reliable study, review every match manually and consult the current
 official rules and training materials.
 
-## Privacy and security
-
-This project may process sensitive local files. Before running it:
-
-1. Remove personal information and private account data from saved HTML where
-   possible.
-2. Never commit credentials, cookies, authorization headers, session IDs, or
-   private assessment links.
-3. Keep `test.html` and any private catalogue outside public repositories.
-4. Review `.gitignore` before committing changes.
-5. Delete local copies when they are no longer needed.
-
-The script itself does not provide a security boundary. Anyone who can read
-the local files may be able to read the questions and generated output.
-
-## Development notes
+# Development notes
 
 The main implementation is in `main.py`. The repository also contains
 supporting catalogue-generation code in `pdf_to_json.py`. Changes to the HTML
@@ -260,14 +629,6 @@ that:
 - unmatched or ambiguous questions are handled safely; and
 - no private input data is included in the change.
 
-## License and third-party rights
-
-No license grant should be assumed unless a license file or an explicit license
-statement is added to this repository. Respect the copyrights, database rights,
-terms of use, and other rights applicable to HTML pages, question catalogues,
-rule books, and dependencies. The names and marks of the DBB and other
-organizations remain the property of their respective owners.
-
 ## Disclaimer summary
 
 By using this project, you acknowledge that you are responsible for:
@@ -276,7 +637,11 @@ By using this project, you acknowledge that you are responsible for:
 - complying with assessment rules and applicable law;
 - protecting personal and confidential information;
 - checking all generated output independently; and
-- accepting the risks associated with experimental, approximate software.
+- accepting the risks associated with experimental, approximate software;
+- verifying that you have rights to use, copy, or redistribute the PDF,
+  catalogue, HTML, and any other third-party material; and
+- not treating the code or its output as an official answer key, legal advice,
+  professional advice, or a guarantee of any result.
 
 If you cannot confirm that your intended use is authorized and compliant, do
 not use the tool for that purpose.
