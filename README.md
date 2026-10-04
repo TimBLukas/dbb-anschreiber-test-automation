@@ -113,10 +113,25 @@ From the repository directory:
 uv sync
 ```
 
-Run the script with:
+Run the interactive CLI with:
 
 ```bash
-uv run python main.py
+uv run anschreiber-helper
+```
+
+The CLI asks whether to use the local `test.html` file or the browser
+workflow. You can also select a mode directly:
+
+```bash
+uv run anschreiber-helper --manual
+uv run anschreiber-helper --automated
+```
+
+Use `--help` to see all options. For custom file locations:
+
+```bash
+uv run anschreiber-helper --manual --html /path/to/test.html \
+  --catalogue /path/to/questions.json
 ```
 
 ### Using a virtual environment and `pip`
@@ -139,8 +154,11 @@ On Windows PowerShell, activation is:
 Then run:
 
 ```bash
-python main.py
+anschreiber-helper
 ```
+
+If the command is not available after installation, run `python main.py`
+instead.
 
 Do not copy credentials, cookies, session tokens, or other secrets into this
 repository.

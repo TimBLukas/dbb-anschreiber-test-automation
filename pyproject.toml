@@ -1,7 +1,17 @@
 [project]
 name = "dbb-anschreiber-test-automation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Compare DBB quiz questions with a local study catalogue"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = ["requests", "pymupdf", "beautifulsoup4", "rapidfuzz", "playwright"]
+dependencies = ["pymupdf", "beautifulsoup4", "rapidfuzz", "playwright"]
+
+[project.scripts]
+anschreiber-helper = "main:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["main"]

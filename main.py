@@ -1,8 +1,31 @@
-"""
-This is a helper to pass the Anschreiber Test from DBB
+"""Extract DBB quiz questions (Kampfrichterkurs) and compare them with a local study catalogue.
 
-I do not take responsibility for using this tool, it is entirely your responsibility if you want to cheat or not!
-The solutions are based on the "fragenkatalog" published online, answers are not guaranteed to be correct
+The script supports two input workflows:
+
+* ``--manual`` reads a locally saved ``test.html`` file.
+* ``--automated`` obtains the current quiz page through the supported
+  browser-integration workflow.
+
+Questions are extracted from the HTML code of the quiz, normalized, and matched
+approximately against the questions in ``questions.json`` using fuzzy string
+matching.
+The program prints the closest catalogue answer and explanation; it
+does not verify matches, submit answers, or modify a website.
+
+This is an unofficial study aid. Catalogue entries and matches may be
+incomplete, outdated, or incorrect, so verify the output against current
+official materials.
+
+Use the script only with content you are authorized to
+access and in accordance with the applicable assessment rules and terms of
+use.
+
+It must not be used to bypass an examination, certification, or training
+requirement, the author does not take responsibility for your usage of this code!
+
+
+:author: TBL
+:version: 0.1.0
 """
 
 import argparse
@@ -28,7 +51,11 @@ from sys import platform
 import tempfile
 from textwrap import fill
 import time
-from typing import Optional
+from typing import Optional, Sequence
+
+
+APP_VERSION = "0.1.0"
+DEFAULT_CATALOGUE = Path(__file__).with_name("questions.json")
 
 
 @dataclass
@@ -44,8 +71,8 @@ class QMatch:
     question: str
     solution: QCatalogue | None
 
-def _load_question_catalogue():
-    with open("questions.json", "r") as f:
+def _load_question_catalogue(path: Path) -> list[QCatalogue]:
+    with path.open(encoding="utf-8") as f:
         questions = json.load(f)
     return [QCatalogue(
         q.get("id"),
@@ -54,8 +81,6 @@ def _load_question_catalogue():
         q.get("article"),
         q.get("explanation")
     ) for q in questions]
-ANSWERS = _load_question_catalogue()
-
 def normalize(s: str):
     s = s.lower()
     s = re.sub(r"[^\w\s]", " ", s)
@@ -66,10 +91,10 @@ def normalize(s: str):
 def _string_similarity(s1: str, s2: str):
     return ratio(normalize(s1), normalize(s2))
 
-def find_best_match(question: str) -> QMatch:
+def find_best_match(question: str, answers: list[QCatalogue]) -> QMatch:
     best_match: Optional[QCatalogue] = None 
     best_score: float = 0
-    for solution in ANSWERS:
+    for solution in answers:
         score = _string_similarity(question, solution.question)
         if score > best_score:
             best_match = solution
@@ -216,13 +241,6 @@ def _extract_questions(html: str) -> list[str]:
 
     return questions
 
-def _load_answer(question: str) -> QMatch:
-    return find_best_match(question)
-
-def _load_answers(questions: list[str]) -> list[QMatch]:
-    return [_load_answer(q) for q in questions]
-
-
 def _output_solution(answers: list[QMatch]):
     """Print matched answers in a readable terminal-friendly format."""
     width = 72
@@ -236,6 +254,10 @@ def _output_solution(answers: list[QMatch]):
         print(f"\n{index:>2}. Question")
         print(fill(match.question, width=width - 4, initial_indent="    ",
                    subsequent_indent="    "))
+        if match.solution is None:
+            print("    Answer: No catalogue match found")
+            continue
+
         print(f"    Answer: {match.solution.answer or 'Unknown'}")
 
         if match.solution.explanation:
@@ -250,6 +272,7 @@ def _output_solution(answers: list[QMatch]):
 
 
 def _get_argparser() -> argparse.ArgumentParser:
+    """Create the command-line argument parser."""
     parser = argparse.ArgumentParser(
         prog="anschreiber-helper",
         description=(
@@ -273,36 +296,88 @@ def _get_argparser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s 0.1",
+        version=f"%(prog)s {APP_VERSION}",
     )
-    parser.add_argument("--manual", action="store_true", help="Use this option if you want to manually copy the sites html to the test.html file")
-    parser.add_argument("--automated", action="store_true", help="Use this option if you want to have the script automatically use the html of the currently open browser window")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
+        "--manual",
+        action="store_true",
+        help="Read a local HTML file (default when choosing interactively)",
+    )
+    mode.add_argument(
+        "--automated",
+        action="store_true",
+        help="Open the browser workflow and read the current quiz page",
+    )
+    parser.add_argument(
+        "--html",
+        type=Path,
+        default=Path("test.html"),
+        metavar="PATH",
+        help="HTML file to read with --manual (default: test.html)",
+    )
+    parser.add_argument(
+        "--catalogue",
+        type=Path,
+        default=DEFAULT_CATALOGUE,
+        metavar="PATH",
+        help=f"Question catalogue (default: {DEFAULT_CATALOGUE.name})",
+    )
     return parser
 
-def _parse_and_output(html: str) -> None:
-    questions = _extract_questions(html) if html else None
-    answers = _load_answers(questions)
-    _output_solution(answers)
+def _parse_and_output(html: str | None, catalogue_path: Path) -> None:
+    if not html:
+        raise ValueError("No quiz HTML was received.")
 
-def manual():
-    with open("test.html", "r") as f:
-        content = f.read()
-    _parse_and_output(content)
+    questions = _extract_questions(html)
+    if not questions:
+        raise ValueError("No questions were found in the supplied quiz HTML.")
 
-def automatic():
+    try:
+        catalogue = _load_question_catalogue(catalogue_path)
+    except FileNotFoundError as error:
+        raise FileNotFoundError(
+            f"Question catalogue not found: {catalogue_path}\n"
+            "Pass its location with --catalogue."
+        ) from error
+    _output_solution([find_best_match(question, catalogue) for question in questions])
+
+def manual(html_path: Path, catalogue_path: Path) -> None:
+    try:
+        content = html_path.read_text(encoding="utf-8")
+    except FileNotFoundError as error:
+        raise FileNotFoundError(
+            f"HTML file not found: {html_path}\n"
+            "Create it first or pass a different path with --html."
+        ) from error
+    _parse_and_output(content, catalogue_path)
+
+def automatic(catalogue_path: Path) -> None:
     html = _fetch_test_html()
-    _parse_and_output(html)
+    _parse_and_output(html, catalogue_path)
 
-def main():
+def _choose_mode() -> str:
+    print("\nHow would you like to provide the quiz HTML?")
+    print("  1. Use a local test.html file")
+    print("  2. Open the browser workflow")
+    while True:
+        choice = input("Choose 1 or 2 [1]: ").strip() or "1"
+        if choice in {"1", "2"}:
+            return choice
+        print("Please enter 1 or 2.")
+
+def main(argv: Sequence[str] | None = None) -> int:
+    """Run the CLI and return a process exit status."""
     parser = _get_argparser()
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
-    if args.manual:
-        manual()
-    elif args.automated:
-        automatic()
-    else:
-        raise RuntimeError("The option provided was not recognized, try --help")
+    try:
+        if args.manual or (not args.manual and not args.automated and _choose_mode() == "1"):
+            manual(args.html, args.catalogue)
+        else:
+            automatic(args.catalogue)
+    except (FileNotFoundError, RuntimeError, ValueError) as error:
+        parser.error(str(error))
 
     return 0
 
