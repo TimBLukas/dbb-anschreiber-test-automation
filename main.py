@@ -5,25 +5,31 @@ I do not take responsibility for using this tool, it is entirely your responsibi
 The solutions are based on the "fragenkatalog" published online, answers are not guaranteed to be correct
 """
 
-from typing import Optional
-from sys import platform
-from pathlib import Path
-import tempfile
-import shutil
-import time
-
-import asyncio
-from playwright.async_api import async_playwright
-import subprocess
-import re
-import socket
 import argparse
-import json
-import requests
-from dataclasses import dataclass
-from textwrap import fill
+import asyncio
+
 from bs4 import BeautifulSoup
+
+from dataclasses import dataclass
+
+import json
+
+from pathlib import Path
+from playwright.async_api import async_playwright
+
 from rapidfuzz.fuzz import ratio
+import re
+
+import shutil
+import socket
+import subprocess
+from sys import platform
+
+import tempfile
+from textwrap import fill
+import time
+from typing import Optional
+
 
 @dataclass
 class QCatalogue:
@@ -36,9 +42,7 @@ class QCatalogue:
 @dataclass
 class QMatch:
     question: str
-    solution: QCatalogue
-
-URL = "https://example.com/test"
+    solution: QCatalogue | None
 
 def _load_question_catalogue():
     with open("questions.json", "r") as f:
@@ -64,7 +68,7 @@ def _string_similarity(s1: str, s2: str):
 
 def find_best_match(question: str) -> QMatch:
     best_match: Optional[QCatalogue] = None 
-    best_score: int = 0
+    best_score: float = 0
     for solution in ANSWERS:
         score = _string_similarity(question, solution.question)
         if score > best_score:
@@ -95,8 +99,7 @@ def _fetch_test_html_macos():
         check=True,
     )
     html = result.stdout
-    with open("demo.html", "w") as f:
-        f.write(html)
+    return html
 
 def _find_chrome() -> str:
     if platform == "darwin":
