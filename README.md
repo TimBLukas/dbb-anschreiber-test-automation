@@ -177,10 +177,10 @@ The folder must contain files such as `main.py`, `pyproject.toml`,
 `questions.json`, and `uv.lock`. Do not run the commands below from inside the
 ZIP file itself.
 
-If you use GitHub directly, select **Code** and then **Download ZIP**, unless
-you already know how to use Git, in which case you can run:
+If you use GitHub directly, select **Code** and then **Download ZIP**.
+If you are familiar with Git and Github, just run:
 `git clone git@github.com:TimBLukas/dbb-anschreiber-test-automation.git`
-to obtain the source code.
+to clone the repository locally.
 
 ### Step 2: Install `uv`
 
@@ -203,10 +203,10 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 This Bash Command will load the installation script (shell-script) and execute it using `sh`.
 
-4. Close the Terminal window completely.
-5. Open a new Terminal window. Opening a new window makes the newly installed
+1. Close the Terminal window completely.
+2. Open a new Terminal window. Opening a new window makes the newly installed
    `uv` command available.
-6. Check that the installation worked:
+3. Check that the installation worked:
 
 ```bash
 uv --version
@@ -227,9 +227,9 @@ not important.
 irm https://astral.sh/uv/install.ps1 | iex
 ```
 
-4. Close PowerShell completely.
-5. Open a new PowerShell window.
-6. Check that the installation worked:
+1. Close PowerShell completely.
+2. Open a new PowerShell window.
+3. Check that the installation worked:
 
 ```powershell
 uv --version
@@ -246,7 +246,7 @@ There are several ways to do this.
 #### macOS
 
 1. Open **Terminal**.
-2. Type `cd `, including the space at the end.
+2. Type `cd`, including the space at the end.
 3. Drag the project folder from Finder into the Terminal window. macOS will
    insert the folder's path.
 4. Press `Return`.
@@ -322,6 +322,7 @@ requires Google Chrome or Chromium to be installed and requires you to be
 authorized to access the relevant page.
 
 ### Recommended first run: local HTML mode
+
 > Note that this mode requires some knowledge on how to obtain a websites HTML code.
 > The automated version will do this step for you.
 > The manual version however is the most undetectable one since there is no indication of external scripts running.
@@ -341,6 +342,7 @@ uv run dbb-anschreiber-test-automation --manual
 ```
 
 or run:
+
 ```bash
 uv run dbb-anschreiber-test-automation
 ```
@@ -619,6 +621,7 @@ The main implementation is in `main.py`. The repository also contains
 supporting catalogue-generation code in `pdf_to_json.py`. Changes to the HTML
 format, JSON schema, matching algorithm, or output format should be tested with
 representative, non-sensitive fixtures.
+The implementation was tested on mac and linux, there is no guarantee it will work on a windows machine.
 
 Before submitting changes, run the script against a local fixture and verify
 that:
