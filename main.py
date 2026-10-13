@@ -66,21 +66,28 @@ class QCatalogue:
     article: Optional[str]
     explanation: Optional[str]
 
+
 @dataclass
 class QMatch:
     question: str
     solution: QCatalogue | None
 
+
 def _load_question_catalogue(path: Path) -> list[QCatalogue]:
     with path.open(encoding="utf-8") as f:
         questions = json.load(f)
-    return [QCatalogue(
-        q.get("id"),
-        q.get("question"),
-        q.get("answer"),
-        q.get("article"),
-        q.get("explanation")
-    ) for q in questions]
+    return [
+        QCatalogue(
+            q.get("id"),
+            q.get("question"),
+            q.get("answer"),
+            q.get("article"),
+            q.get("explanation"),
+        )
+        for q in questions
+    ]
+
+
 def normalize(s: str):
     s = s.lower()
     s = re.sub(r"[^\w\s]", " ", s)
@@ -88,11 +95,13 @@ def normalize(s: str):
 
     return s.strip()
 
+
 def _string_similarity(s1: str, s2: str):
     return ratio(normalize(s1), normalize(s2))
 
+
 def find_best_match(question: str, answers: list[QCatalogue]) -> QMatch:
-    best_match: Optional[QCatalogue] = None 
+    best_match: Optional[QCatalogue] = None
     best_score: float = 0
     for solution in answers:
         score = _string_similarity(question, solution.question)
@@ -100,6 +109,7 @@ def find_best_match(question: str, answers: list[QCatalogue]) -> QMatch:
             best_match = solution
             best_score = score
     return QMatch(question, best_match)
+
 
 def _fetch_test_html_macos():
     print(
@@ -109,13 +119,13 @@ def _fetch_test_html_macos():
 
     input("Press ENTER once the test has started...")
 
-    script = '''
+    script = """
         tell application "Safari"
             tell current tab of window 1
                 do JavaScript "document.documentElement.outerHTML"
             end tell
         end tell
-    '''
+    """
 
     result = subprocess.run(
         ["osascript", "-e", script],
@@ -126,11 +136,15 @@ def _fetch_test_html_macos():
     html = result.stdout
     return html
 
+
 def _find_chrome() -> str:
     if platform == "darwin":
         candidates = [
             "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-            str(Path.home() / "Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+            str(
+                Path.home()
+                / "Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+            ),
         ]
     elif platform == "win32":
         candidates = [
@@ -154,18 +168,23 @@ def _find_chrome() -> str:
         if Path(path).is_file():
             return path
 
-    for exe in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser"):
+    for exe in (
+        "google-chrome",
+        "google-chrome-stable",
+        "chromium",
+        "chromium-browser",
+    ):
         chrome_path = shutil.which(exe)
         if chrome_path:
             return chrome_path
 
     raise FileNotFoundError("Could not find a Chrome/Chromium installation.")
-        
+
 
 def _launch_chrome_in_debugging_mode(
-        port: int = 9222, 
-        url: str | None = "https://dbb.triagonal.net/online/course/view.php?id=18"
-    ) -> subprocess.Popen:
+    port: int = 9222,
+    url: str | None = "https://dbb.triagonal.net/online/course/view.php?id=18",
+) -> subprocess.Popen:
     chrome_path = _find_chrome()
     user_data_dir = tempfile.mkdtemp(prefix="chrome-debug-")
 
@@ -176,7 +195,9 @@ def _launch_chrome_in_debugging_mode(
     ]
     if url:
         args.append(url)
-    process = subprocess.Popen(args=args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    process = subprocess.Popen(
+        args=args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL
+    )
 
     time_limit = time.time() + 10
 
@@ -186,25 +207,20 @@ def _launch_chrome_in_debugging_mode(
                 return process
         time.sleep(0.5)
     process.terminate()
-    raise RuntimeError(f"Chrome did not start the remote debugging server on port {port}")
+    raise RuntimeError(
+        f"Chrome did not start the remote debugging server on port {port}"
+    )
 
-    
 
 async def _fetch_test_html_chrome() -> str | None:
     _launch_chrome_in_debugging_mode()
     async with async_playwright() as p:
-        browser = await p.chromium.connect_over_cdp(
-            "http://localhost:9222"
-        )
+        browser = await p.chromium.connect_over_cdp("http://localhost:9222")
         print(
-            "\n"
-            "1. Log in to your DBB account\n2. Select the test\n3. Start the test\n"
+            "\n1. Log in to your DBB account\n2. Select the test\n3. Start the test\n"
         )
 
-        await asyncio.to_thread(
-            input,
-            "Press ENTER once the test has started..."
-        )
+        await asyncio.to_thread(input, "Press ENTER once the test has started...")
 
         context = browser.contexts[0]
 
@@ -212,6 +228,7 @@ async def _fetch_test_html_chrome() -> str | None:
             if "dbb.triagonal" in page.url:
                 return await page.content()
     return None
+
 
 def _fetch_test_html() -> str | None:
     match platform:
@@ -225,6 +242,7 @@ def _fetch_test_html() -> str | None:
             return _fetch_test_html_macos()
 
     raise RuntimeError("Unable to identify OS to fetch Test HTML")
+
 
 def _extract_questions(html: str) -> list[str]:
     """Extract the question text from the dbb html quiz content page"""
@@ -241,6 +259,7 @@ def _extract_questions(html: str) -> list[str]:
 
     return questions
 
+
 def _output_solution(answers: list[QMatch]):
     """Print matched answers in a readable terminal-friendly format."""
     width = 72
@@ -252,8 +271,14 @@ def _output_solution(answers: list[QMatch]):
 
     for index, match in enumerate(answers, start=1):
         print(f"\n{index:>2}. Question")
-        print(fill(match.question, width=width - 4, initial_indent="    ",
-                   subsequent_indent="    "))
+        print(
+            fill(
+                match.question,
+                width=width - 4,
+                initial_indent="    ",
+                subsequent_indent="    ",
+            )
+        )
         if match.solution is None:
             print("    Answer: No catalogue match found")
             continue
@@ -261,13 +286,20 @@ def _output_solution(answers: list[QMatch]):
         print(f"    Answer: {match.solution.answer or 'Unknown'}")
 
         if match.solution.explanation:
-            print(fill(
-                f"Explanation: {match.solution.explanation}",
-                width=width - 4,
-                initial_indent="    ",
-                subsequent_indent="               ",
-            ))
+            print(
+                fill(
+                    f"Explanation: {match.solution.explanation}",
+                    width=width - 4,
+                    initial_indent="    ",
+                    subsequent_indent="               ",
+                )
+            )
 
+    print(f"\n{separator}")
+
+    print("Summary:")
+    for index, match in enumerate(answers, start=1):
+        print(f"{index}: {match.solution.answer}")
     print(f"\n{separator}")
 
 
@@ -325,6 +357,7 @@ def _get_argparser() -> argparse.ArgumentParser:
     )
     return parser
 
+
 def _parse_and_output(html: str | None, catalogue_path: Path) -> None:
     if not html:
         raise ValueError("No quiz HTML was received.")
@@ -342,6 +375,7 @@ def _parse_and_output(html: str | None, catalogue_path: Path) -> None:
         ) from error
     _output_solution([find_best_match(question, catalogue) for question in questions])
 
+
 def manual(html_path: Path, catalogue_path: Path) -> None:
     try:
         content = html_path.read_text(encoding="utf-8")
@@ -352,9 +386,11 @@ def manual(html_path: Path, catalogue_path: Path) -> None:
         ) from error
     _parse_and_output(content, catalogue_path)
 
+
 def automatic(catalogue_path: Path) -> None:
     html = _fetch_test_html()
     _parse_and_output(html, catalogue_path)
+
 
 def _choose_mode() -> str:
     print("\nHow would you like to provide the quiz HTML?")
@@ -366,13 +402,16 @@ def _choose_mode() -> str:
             return choice
         print("Please enter 1 or 2.")
 
+
 def main(argv: Sequence[str] | None = None) -> int:
     """Run the CLI and return a process exit status."""
     parser = _get_argparser()
     args = parser.parse_args(argv)
 
     try:
-        if args.manual or (not args.manual and not args.automated and _choose_mode() == "1"):
+        if args.manual or (
+            not args.manual and not args.automated and _choose_mode() == "1"
+        ):
             manual(args.html, args.catalogue)
         else:
             automatic(args.catalogue)
@@ -381,7 +420,6 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     return 0
 
-    
 
 if __name__ == "__main__":
     SystemExit(main())
