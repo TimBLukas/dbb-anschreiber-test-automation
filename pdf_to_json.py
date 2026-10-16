@@ -16,11 +16,8 @@ def clean_text(text: str) -> str:
 
 def parse_questions(pdf_path: Path) -> list[dict]:
     doc = fitz.open(pdf_path)
-
-    # Combine the text from all PDF pages
     full_text = "\n".join(page.get_text() for page in doc)
 
-    # Find question numbers such as K-1, K-2, ..., K-142
     matches = list(re.finditer(r"(?m)^K-(\d+)\s*", full_text))
 
     questions = []
@@ -47,13 +44,7 @@ def parse_questions(pdf_path: Path) -> list[dict]:
             print(f"Warning: no answer found for K-{question_number}")
             continue
 
-        # -------------------------
-        # Question
-        # -------------------------
-
         question = block[:answer_match.start()]
-
-        # Remove the x from the J/N column
         question = re.sub(
             r"\bx\b",
             "",
@@ -63,22 +54,11 @@ def parse_questions(pdf_path: Path) -> list[dict]:
 
         question = clean_text(question)
 
-        # -------------------------
-        # Answer
-        # -------------------------
 
         answer = answer_match.group(1)
-
-        # Reference inside the parentheses
         answer_reference = answer_match.group(2)
 
-        # -------------------------
-        # Explanation
-        # -------------------------
-
         explanation = block[answer_match.end():]
-
-        # Remove PDF footer
         explanation = re.sub(
             r"\s*1\.8\.2026\s+\d+\s+von\s+17\s*$",
             "",
@@ -86,10 +66,6 @@ def parse_questions(pdf_path: Path) -> list[dict]:
         )
 
         explanation = clean_text(explanation)
-
-        # -------------------------
-        # Article
-        # -------------------------
 
         article = None
 
@@ -102,18 +78,12 @@ def parse_questions(pdf_path: Path) -> list[dict]:
         if lines:
             last_line = lines[-1]
 
-            # Examples:
-            # 3
-            # 29/51
-            # 43
             if re.fullmatch(r"\d+(?:/\d+)*", last_line):
                 article = last_line
                 explanation = clean_text(
                     "\n".join(lines[:-1])
                 )
 
-            # Example:
-            # KRHB
             elif re.fullmatch(
                 r"[A-Za-zÄÖÜäöüß-]+",
                 last_line
@@ -139,12 +109,8 @@ def parse_questions(pdf_path: Path) -> list[dict]:
 def main():
     questions = parse_questions(PDF_PATH)
 
-    # Sort questions by their number
-    questions.sort(
-        key=lambda q: int(q["id"].split("-")[1])
-    )
+    questions.sort(key=lambda q: int(q["id"].split("-")[1]))
 
-    # Write JSON output
     with OUTPUT_PATH.open(
         "w",
         encoding="utf-8"
@@ -160,7 +126,6 @@ def main():
     print(f"{len(questions)} questions extracted.")
     print(f"Output: {OUTPUT_PATH}")
 
-    # Validate question numbers
     expected = list(range(1, len(questions) + 1))
 
     actual = [
@@ -173,7 +138,6 @@ def main():
     else:
         print("Warning: missing or duplicate question numbers.")
 
-    # Check for missing fields
     missing = []
 
     for question in questions:
